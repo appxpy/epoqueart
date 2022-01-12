@@ -1,0 +1,54 @@
+{% extends 'main/base.html' %}
+{% load i18n %}
+{% load static %}
+{% block title%}
+<title>EpoqueArt - Home</title>
+{% endblock %}
+
+{% block nav-active %}
+<a class="nav-link active" href="{% url 'home' %}">{% trans 'HomeNavBar' %}</a>
+{% endblock %}
+{% block content %}
+<div class="display-4 gsbold main">
+    <h1 class="display-4 gslight">Opening soon...</h1>
+    <p class="lead gslight">We prepare everything for the opening.</p>
+    <br>
+    <p class="social d-flex justify-content-center">
+        <a href="tg://resolve?domain=appxpy" class="mx-2" data-tooltip="Telegram">
+            <span class="mdi mdi-telegram"></span>
+        </a>
+        <a href="//instagram.com/appxpy" class="mx-2" data-tooltip="Instagram">
+            <span class="mdi mdi-instagram"></span>
+        </a>
+        <a href="//vk.com/appxpy" class="mx-2" data-tooltip="VK">
+            <span class="mdi mdi-vk"></span>
+        </a>
+        <a href="//github.com/appxpy/" class="mx-2" data-tooltip="GitHub">
+            <span class="mdi mdi-github-circle"></span>
+        </a>
+    </p>
+</div>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap');
+    body {
+        background-image: url({% static '/img/bg.jpeg'%});
+        background-color: #111;
+        background-position: 80%;
+        background-repeat: no-repeat;
+        background-size: cover !important;
+    }
+
+    .gslight {
+        font-family: 'Raleway', sans-serif;
+    }
+
+    a.mx-2 {
+        background-color: rgba(0, 0, 0, .3);
+    }
+
+    footer.mastfoot.mt-auto {
+        color: #666;
+    }
+
+</style>
+{% endblock %}

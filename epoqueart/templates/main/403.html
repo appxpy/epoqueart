@@ -1,0 +1,32 @@
+{% extends 'main/base.html' %}
+{% load i18n %}
+
+{% block title%}
+<title>EpoqueArt - 403 Forbidden</title>
+{% endblock %}
+
+{% block nav-active %}
+<a class="nav-link" href="{% url 'home' %}">{% trans 'HomeNavBar' %}</a>
+{% endblock %}
+
+{% block content %}
+        <div class="display-4 gsbold main">
+            <h1 class="display-4 error gsbold" id='errorEmoji'>\(o_o)/</h1>
+            <h2 class="gsregular">{% trans 'Error - 403' %}</h2>
+            <h5 class='lead gsregular'>{% trans 'ErrorDescription - 403' %}</h3>
+                <br>
+        </div>
+<script>
+const errorEmoji = document.getElementById('errorEmoji')
+
+function getRandomEmoji() {
+    let emojiList = ['(>_<)', '(≥o≤)', '(^_^)', '\\\(o_o)/', '(·.·)', '(˚Δ˚)', '(·_·)', '(o^^)', '(^-^*)', "(='X'=)", '(;-;)', '\\(^Д^)/', '(--_--)', '(T_T)', '(x_x)', '(+_+)', '¯\\\_(ツ)_/¯'];
+    let random = emojiList[Math.floor(Math.random() * emojiList.length)];
+    return random;
+}
+
+$(document).ready(function() {
+    errorEmoji.innerText = getRandomEmoji()
+});
+</script>
+{% endblock %}
