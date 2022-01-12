@@ -30,7 +30,7 @@ SECRET_KEY = 'django-insecure-s5nf9f4hql7p4762&7#lsld)3o=4lhzdfb8hom7pz1yk37up$+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['epoque.art', 'www.epoque.art']
+ALLOWED_HOSTS = ['3.84.57.32', 'epoque.art', 'www.epoque.art']
 
 
 # Application definition
@@ -147,6 +147,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
+    '/home/ubuntu/epoqueart/ea_env/lib/python3.8/site-packages/django/contrib/admin/static/',
 ]
 
 # if ENV == 'DEV':
