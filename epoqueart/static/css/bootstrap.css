@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
+
 #page-preloader {
     position: fixed;
     left: 0;
@@ -129,41 +131,24 @@
     }
 }
 
-@font-face {
-    font-family: 'Google Sans Regular';
-    src: local('Google Sans Regular'), local('Google-Sans-Regular'),
-        url('GoogleSans-Regular.woff2') format('woff2'),
-        url('GoogleSans-Regular.woff') format('woff'),
-        url('GoogleSans-Regular.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
+.gslight {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
 }
 
 .gsregular {
-    font-family: 'Google Sans Regular', sans-serif;
-}
-
-@font-face {
-    font-family: google sans medium;
-    src: url(/static/css/GoogleSans-Medium.ttf) format('truetype')
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
 }
 
 .gsmedium {
-    font-family: google sans medium, serif
-}
-
-@font-face {
-    font-family: 'Google Sans Bold';
-    src: local('Google Sans Bold'), local('Google-Sans-Bold'),
-        url('GoogleSans-Bold.woff2') format('woff2'),
-        url('GoogleSans-Bold.woff') format('woff'),
-        url('GoogleSans-Bold.ttf') format('truetype');
-    font-weight: 700;
-    font-style: normal;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
 }
 
 .gsbold {
-    font-family: 'Google Sans Bold', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
 }
 
 
@@ -533,7 +518,7 @@ img {
 
 .brand-text {
     fill: #fff !important;
-    mix-blend-mode: difference;
+    mix-blend-mode: hard-light;
 }
 
 .masthead {

@@ -6,40 +6,41 @@
 {% endblock %}
 
 {% block nav-active %}
-<a class="nav-link active" href="{% url 'home' %}">{% trans 'HomeNavBar' %}</a>
+{% comment %} <a class="nav-link active" href="{% url 'home' %}">{% trans 'HomeNavBar' %}</a> {% endcomment %}
 {% endblock %}
 {% block content %}
 <div class="display-4 gsbold main">
     <h1 class="display-4 gslight">Opening soon...</h1>
-    <p class="lead gslight">We prepare everything for the opening.</p>
+    <p class="lead gslight">You can subscribe to our social networks and follow the updates.</p>
     <br>
     <p class="social d-flex justify-content-center">
-        <a href="tg://resolve?domain=appxpy" class="mx-2" data-tooltip="Telegram">
+        <a href="tg://resolve?domain=epoqueart" class="mx-2" data-tooltip="Telegram">
             <span class="mdi mdi-telegram"></span>
         </a>
-        <a href="//instagram.com/appxpy" class="mx-2" data-tooltip="Instagram">
-            <span class="mdi mdi-instagram"></span>
-        </a>
-        <a href="//vk.com/appxpy" class="mx-2" data-tooltip="VK">
-            <span class="mdi mdi-vk"></span>
-        </a>
-        <a href="//github.com/appxpy/" class="mx-2" data-tooltip="GitHub">
-            <span class="mdi mdi-github-circle"></span>
+        <a href="//facebook.com/epoqueart" class="mx-2" data-tooltip="Facebook">
+            <span class="mdi mdi-facebook"></span>
         </a>
     </p>
 </div>
+<script>
+    var images = ['{% static 'img/bg2.jpeg' %}','{% static 'img/bg3.jpeg' %}','{% static 'img/bg4.jpeg' %}'];
+    var c = 0;
+    $('body').ready(function() {
+        setInterval(function() {
+            console.log('Changed!')
+            $('body').attr('style', 'background-image: url('+images[c % images.length]+');');
+            c += 1;
+        }, 5000)
+    });
+</script>
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap');
     body {
-        background-image: url({% static '/img/bg.jpeg'%});
-        background-color: #111;
-        background-position: 80%;
-        background-repeat: no-repeat;
+        background: url('{% static 'img/bg2.jpeg' %}') no-repeat center center fixed;
+        -webkit-background-size: cover !important;
+        -moz-background-size: cover !important;
+        -o-background-size: cover !important;
         background-size: cover !important;
-    }
-
-    .gslight {
-        font-family: 'Raleway', sans-serif;
+        transition: background 300ms ease-in 200ms;
     }
 
     a.mx-2 {
@@ -49,6 +50,5 @@
     footer.mastfoot.mt-auto {
         color: #666;
     }
-
 </style>
 {% endblock %}
