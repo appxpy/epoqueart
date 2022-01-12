@@ -142,13 +142,13 @@ MEDIA_URL = '/media/'
 
 STATIC_URL = '/static/'
 
-# STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static'),
-    '/home/ubuntu/epoqueart/ea_env/lib/python3.8/site-packages/django/contrib/admin/static/',
-]
+# STATICFILES_DIRS = [
+#     os.path.join(BASE_DIR, 'static'),
+#     '/home/ubuntu/epoqueart/ea_env/lib/python3.8/site-packages/django/contrib/admin/static/',
+# ]
 
 # if ENV == 'DEV':
 #     MEDIA_ROOT = '/Users/appxpy/Desktop/Python/epoqueart/epoqueart/media'
