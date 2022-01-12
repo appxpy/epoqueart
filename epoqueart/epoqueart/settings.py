@@ -85,7 +85,7 @@ WSGI_APPLICATION = 'epoqueart.wsgi.application'
 if ENV == 'DEV':
     DATABASES = {
         'default': {
-            'ENGINE': 'django.db.backends.sqlite3',
+            'ENGINE': 'django.db.backends.postgresql_psycopg2',
             'NAME': BASE_DIR / 'db.sqlite3',
         }
     }
@@ -93,9 +93,9 @@ else:
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.mysql',
-            'NAME': '*',
-            'USER': '*',
-            'PASSWORD': '*',
+            'NAME': 'epoqueart',
+            'USER': 'root',
+            'PASSWORD': 'jcVXeqT9JBGsUi26pPgfUX7sZieouUjOWbnk6TCAONLNkUY6M2QJnorj1hJqI88Xpip install django gunicorn psycopg2-binary',
             'HOST': 'localhost'
         }
     }
