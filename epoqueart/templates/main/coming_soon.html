@@ -3,6 +3,9 @@
 {% load static %}
 {% block title%}
 <title>EpoqueArt - Home</title>
+<link rel="preload" as="image" href="{% static 'img/bg2.jpeg' %}">
+<link rel="preload" as="image" href="{% static 'img/bg3.jpeg' %}">
+<link rel="preload" as="image" href="{% static 'img/bg4.jpeg' %}">
 {% endblock %}
 
 {% block nav-active %}
@@ -35,7 +38,7 @@
 </script>
 <style>
     body {
-        background: url('{% static 'img/bg2.jpeg' %}') no-repeat center center fixed;
+        background: url('{% static 'img/bg2.jpeg' %}') no-repeat center center fixed !important;
         -webkit-background-size: cover !important;
         -moz-background-size: cover !important;
         -o-background-size: cover !important;
