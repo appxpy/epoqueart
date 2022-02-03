@@ -15,7 +15,6 @@ html {
 #particles-js canvas {
     background-color: #161616;
     display: block;
-    vertical-align: bottom;
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1);

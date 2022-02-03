@@ -6,14 +6,14 @@
 {% endblock %}
 
 {% block nav-active %}
-<a class="nav-link" href="{% url 'home' %}">{% trans 'HomeNavBar' %}</a>
+<a class="nav-link" href="{% url 'home' %}">Home</a>
 {% endblock %}
 
 {% block content %}
 <div class="display-4 gsbold main">
             <h1 class="display-4 error gsbold" id='errorEmoji'>\(o_o)/</h1>
-            <h2 class="gsregular">{% trans 'Error - 500' %}</h2>
-            <h5 class='lead gsregular'>{% trans 'Error Description - 500'%} <a href="mailto:support@appxpy.com" style="color:#2196f3;">support@appxpy.com</a></h5>
+            <h2 class="gsregular">500 - Internal server error</h2>
+            <h5 class='lead gsregular'>Something went wrong on the server side. Please try again or send an error message to <a href="mailto:support@epoque.art" style="color:#2196f3;">support@epoque.art</a></h5>
                 <br>
         </div>
 <script>

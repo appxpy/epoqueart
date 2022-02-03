@@ -9,7 +9,7 @@
 {% endblock %}
 
 {% block nav-active %}
-{% comment %} <a class="nav-link active" href="{% url 'home' %}">{% trans 'HomeNavBar' %}</a> {% endcomment %}
+<a class="nav-link active" href="{% url 'gallery' %}">Gallery</a>
 {% endblock %}
 {% block content %}
 <div class="display-4 gsbold main">
@@ -30,8 +30,7 @@
     var c = 0;
     $('body').ready(function() {
         setInterval(function() {
-            console.log('Changed!')
-            $('body').attr('style', 'background-image: url('+images[c % images.length]+');');
+            $('body').attr('style', 'background-image: url('+images[c % images.length]+') !important;');
             c += 1;
         }, 5000)
     });

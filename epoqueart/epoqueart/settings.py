@@ -13,29 +13,51 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 from pathlib import Path
 import os
 
-ENV = 'PROD'
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-LOGGING = { 'version': 1, 'disable_existing_loggers': False, 'handlers': { 'file': { 'level': 'DEBUG', 'class': 'logging.FileHandler', 'filename': BASE_DIR / 'debug.log', }, }, 'loggers': { 'django': { 'handlers': ['file'], 'level': 'DEBUG', 'propagate': True, }, }, }
-
-
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'formatters': {
+        'file': {
+            'format': '%(asctime)s %(name)-12s %(levelname)-8s %(message)s'
+        }
+    },
+    'handlers': {
+        'file': {
+            'level': 'INFO',
+            'class': 'logging.FileHandler',
+            'formatter': 'file',
+            'filename': BASE_DIR / 'logs' / 'debug.log',
+        },
+    },
+    'loggers': {
+        'django': {
+            'handlers': ['file'],
+            'level': 'INFO',
+            'propagate': True,
+        },
+    },
+}
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-s5nf9f4hql7p4762&7#lsld)3o=4lhzdfb8hom7pz1yk37up$+'
+SECRET_KEY = os.environ.get("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = bool(int(os.environ.get("DEBUG", default=False)))
 
-ALLOWED_HOSTS = ['epoque.art', 'www.epoque.art']
+ALLOWED_HOSTS = os.environ.get("DJANGO_ALLOWED_HOSTS").split(" ")
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    'admin_interface',
+    'colorfield',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -43,7 +65,15 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'main',
+    'accounts',
+    'compressor',
 ]
+
+STATICFILES_FINDERS = (
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+    'compressor.finders.CompressorFinder',
+)
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -77,28 +107,22 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'epoqueart.wsgi.application'
-
+AUTH_USER_MODEL = 'accounts.CustomUser'
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-if ENV == 'DEV':
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.sqlite3',
-            'NAME': BASE_DIR / 'db.sqlite3',
-        }
+DATABASES = {
+    "default": {
+        "ENGINE": os.environ.get("SQL_ENGINE", "django.db.backends.sqlite3"),
+        "NAME": os.environ.get("SQL_DATABASE", BASE_DIR / "db.sqlite3"),
+        "USER": os.environ.get("SQL_USER", "user"),
+        "PASSWORD": os.environ.get("SQL_PASSWORD", "password"),
+        "HOST": os.environ.get("SQL_HOST", "localhost"),
+        "PORT": os.environ.get("SQL_PORT", "5432"),
     }
-else:
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.postgresql_psycopg2',
-            'NAME': 'epoqueart',
-            'USER': 'root',
-            'PASSWORD': 'jcVXeqT9JBGsUi26pPgfUX7sZieouUjOWbnk6TCAONLNkUY6M2QJnorj1hJqI88X',
-            'HOST': 'localhost'
-        }
-    }
+}
+
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
 
@@ -139,20 +163,30 @@ LOCALE_PATHS = [os.path.join(BASE_DIR, 'locale')]
 MEDIA_URL = '/media/'
 
 ##########################
+if not DEBUG:
+    SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
+
+X_FRAME_OPTIONS = 'SAMEORIGIN'
+
+SILENCED_SYSTEM_CHECKS = ['security.W019']
 
 STATIC_URL = '/static/'
 
+COMPRESS_ENABLED = True
+COMPRESS_OUTPUT_DIR = '_'
+
+COMPRESS_YUI_BINARY = f"java -jar {os.path.join(BASE_DIR, 'contrib/yuicompressor-2.4.8.jar')}"
+COMPRESS_YUI_JS_ARGUMENTS = ''
+
+COMPRESS_PRECOMPILERS = (
+    ('text/x-scss', 'django_libsass.SassCompiler'),
+)
+COMPRESS_FILTERS = {'css': ['compressor.filters.css_default.CssAbsoluteFilter'], 'js': ['compressor.filters.yui.YUIJSFilter']}
+
+COMPRESS_ROOT = os.path.join(BASE_DIR, 'static')
+
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-
-# STATICFILES_DIRS = [
-#     os.path.join(BASE_DIR, 'static'),
-#     '/home/ubuntu/epoqueart/ea_env/lib/python3.8/site-packages/django/contrib/admin/static/',
-# ]
-
-# if ENV == 'DEV':
-#     MEDIA_ROOT = '/Users/appxpy/Desktop/Python/epoqueart/epoqueart/media'
-#     STATIC_ROOT = '/Users/appxpy/Desktop/Python/epoqueart/epoqueart/static'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
