@@ -175,7 +175,11 @@
                     <div class="profile">
                         <div class="profile_details">
                             {% if user.is_authenticated %}
+                            {% if user.avatar %}
                             <img src="{{ user.avatar.url }}" alt="Profile Image">
+                            {% else %}
+                            <i class="person__icon bi bi-person-bounding-box"></i>
+                            {% endif %}
                             <div class="name__job">
                                 <div class="name">
                                     {{ user.first_name }} {{ user.last_name }}
