@@ -9,3 +9,4 @@ _/
 .env.prod.db
 .env.dev.db
 .env.prod.proxy-companion
+epoqueart/logs/debug.log

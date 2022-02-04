@@ -6,7 +6,7 @@ ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
 
 RUN apk update \
-    && apk add gcc python3-dev jpeg-dev zlib-dev musl-dev postgresql-dev build-base openjdk
+    && apk add gcc python3-dev jpeg-dev zlib-dev musl-dev postgresql-dev build-base openjdk17
 
 RUN pip install --upgrade pip
 COPY ./requirements.txt .

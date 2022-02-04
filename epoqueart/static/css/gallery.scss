@@ -303,6 +303,7 @@ a {
   width: 300px;
   left: 0;
   height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   padding: 16px 14px;
   color: var(--color-sidebar);
   z-index: 5;
@@ -315,7 +316,8 @@ a {
   .scrollable {
     overflow-y: auto;
     overflow-x: hidden;
-    max-height: calc(100vh - 240px);
+    height: calc(100vh - 255px);
+    max-height: calc(calc(var(--vh, 1vh) * 100) - 255px);
   }
 
   &.hidden {
@@ -529,7 +531,8 @@ a {
         padding: 24px;
         width: 100%;
         min-height: 120px;
-        max-height: calc(100vh - 240px);
+        height: calc(100vh - 255px);
+        max-height: calc(calc(var(--vh, 1vh) * 100) - 255px);
         border-radius: 12px;
         background-color: rgba(180, 180, 180, 0.8);
         backdrop-filter: blur(3px);
