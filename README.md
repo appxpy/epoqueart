@@ -1,22 +1,22 @@
 # Epoque.art Website
 
 ## Stack of used technology
+
 > Backend:
->> Python 3.9
->> Django 4.1
->> Gunicorn
->> Django related addons (watch requirements.txt)
->> PostgreSQL
->> Docker (including docker-compose)
->> Node.JS (used for compressing and obfuscating static files)
->> nginx (reverse proxy for gunicorn)
->> nginx-acme-companion (used to issue ssl certs)
+1. Python 3.9
+2. Django 4.1
+3. Gunicorn
+4. Django related addons (watch requirements.txt)
+5. PostgreSQL
+6. Docker (including docker-compose)
+7. Node.JS (used for compressing and obfuscating static files)
+8. nginx (reverse proxy for gunicorn)
+9. nginx-acme-companion (used to issue ssl certs)
 
 > Frontend:
->> HTML
->> CSS
->> SASS
-
+1. HTML
+2. CSS
+3. SASS
 
 ## Deploy or dev
 
@@ -48,7 +48,7 @@ POSTGRES_DB=epoqueart_dev
 
 ------
 
-####Run project
+#### Run project
 >`sudo docker-compose -f docker-compose.yml -d --build`
 >This command will build and start two containers - for db and website itself.
 
@@ -82,12 +82,12 @@ POSTGRES_DB=epoqueart_dev
 ##### Example of running tests
 > Run command in our interactive container shell - `python manage.py test` and you should see OK output without errors.
 
-######Output
+###### Output
 ![Example of output](https://i.imgur.com/mxSMKVb.png "Example of output")
 
 -------
 
-####Example of checking internal debug log
+#### Example of checking internal debug log
 > Run command in our interactive container shell - `cd logs && cat debug.log`, if you want to display it constantly, run `cd logs && tail debug.log -f`
 
 -------
