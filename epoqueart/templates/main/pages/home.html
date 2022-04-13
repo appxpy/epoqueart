@@ -1,0 +1,27 @@
+{% extends 'main/base.html' %}
+{% load i18n %}
+{% load static %}
+
+{% block title%}
+<title>EpoqueArt - Home</title>
+{% endblock %}
+
+{% block post_assets %}
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.9/dist/js/splide.cjs.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.9/dist/css/splide.min.css">
+{% endblock %}
+{% block content %}
+
+{% include "components/home/home-slider.html" %}
+{% include "components/home/home-events.html" %}
+<div class="aos-block">
+{% include "components/home/home-about.html" %}
+</div>
+<div class="aos-block">
+{% include "components/home/home-catalog.html" %}
+</div>
+<div class="aos-block">
+{% include "components/home/home-collab.html" %}
+</div>
+{% endblock %}
+

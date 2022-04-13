@@ -1,0 +1,939 @@
+
+2022-04-12 06:17:12,876 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-12 06:17:19,474 django.server INFO     "GET / HTTP/1.1" 200 25344
+2022-04-12 06:17:27,961 django.server INFO     "GET / HTTP/1.1" 200 25336
+2022-04-12 06:17:33,113 django.server INFO     "GET /artists/ HTTP/1.1" 200 32448
+2022-04-12 06:17:51,948 django.server INFO     "POST / HTTP/1.1" 200 25340
+2022-04-12 15:14:49,035 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-12 15:15:11,926 django.server INFO     "GET / HTTP/1.1" 200 25350
+2022-04-12 15:15:11,983 django.server INFO     "GET /static/_/css/app.c4c2db594964.css HTTP/1.1" 200 21343
+2022-04-12 15:15:12,046 django.server INFO     "GET /static/_/css/bootstrap.989512dd68c6.css HTTP/1.1" 200 390561
+2022-04-12 15:15:12,237 django.server INFO     "GET /static/img/assets/home/home-slider-01.jpg HTTP/1.1" 200 515516
+2022-04-12 15:15:12,282 django.server INFO     "GET /static/img/assets/home/home-slider-03.jpg HTTP/1.1" 200 363593
+2022-04-12 15:15:12,284 django.server INFO     "GET /static/img/assets/home/home-slider-02.jpg HTTP/1.1" 200 450212
+2022-04-12 15:15:12,311 django.server INFO     "GET /static/img/assets/home/home-slider-04.jpg HTTP/1.1" 200 399848
+2022-04-12 15:15:12,352 django.server INFO     "GET /static/img/assets/home/home-slider-05.jpg HTTP/1.1" 200 430900
+2022-04-12 15:15:12,358 django.server INFO     "GET /static/img/assets/home/home-about-02.jpg HTTP/1.1" 200 474499
+2022-04-12 15:15:12,388 django.server INFO     "GET /static/img/assets/home/home-collab-03.jpg HTTP/1.1" 200 502041
+2022-04-12 15:15:12,421 django.server INFO     "GET /static/favicon.png HTTP/1.1" 200 1121
+2022-04-12 15:15:12,468 django.server INFO     "GET /static/favicon.svg HTTP/1.1" 200 3073
+2022-04-12 15:15:25,091 django.server INFO     "GET /artists/ HTTP/1.1" 200 32448
+2022-04-12 15:15:25,277 django.server INFO     "GET /media/images/content/4fa796cceaa74ef1a91e6037608ac1d4.jpeg HTTP/1.1" 200 95699
+2022-04-12 15:15:25,284 django.server INFO     "GET /media/images/content/8b639be7586d4dd0afa6f75af4ec4575.jpeg HTTP/1.1" 200 111714
+2022-04-12 15:15:25,290 django.server INFO     "GET /media/images/content/2bc3e798081747e6a602d7bfc949a7b6.jpeg HTTP/1.1" 200 80690
+2022-04-12 15:15:25,307 django.server INFO     "GET /media/images/content/4ec4e4f4a0e641ad83481e4d06f205f1.jpeg HTTP/1.1" 200 66414
+2022-04-12 15:15:25,317 django.server INFO     "GET /media/images/content/aad649202c824392b575d004f83b2986.jpeg HTTP/1.1" 200 155558
+2022-04-12 15:15:27,097 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 25398
+2022-04-12 15:42:19,652 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 25398
+2022-04-12 15:42:21,304 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 25398
+2022-04-12 15:42:22,565 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 25398
+2022-04-12 15:42:22,624 django.server INFO     "GET /static/_/css/app.c4c2db594964.css HTTP/1.1" 200 21343
+2022-04-12 15:42:22,632 django.server INFO     "GET /static/_/css/bootstrap.989512dd68c6.css HTTP/1.1" 200 390561
+2022-04-12 15:42:23,035 django.server INFO     "GET /static/favicon.png HTTP/1.1" 200 1121
+2022-04-12 15:42:50,026 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 26904
+2022-04-12 15:43:31,264 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 26988
+2022-04-12 15:43:59,270 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 27048
+2022-04-12 15:44:04,766 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 27042
+2022-04-12 15:45:50,631 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 27232
+2022-04-12 15:46:12,084 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 27249
+2022-04-12 15:46:34,719 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 27251
+2022-04-12 15:46:44,025 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 27284
+2022-04-12 15:46:45,010 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 27284
+2022-04-12 15:48:07,032 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 27283
+2022-04-12 15:48:09,655 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 27283
+2022-04-12 15:48:24,758 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 27281
+2022-04-12 15:49:22,564 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 27305
+2022-04-12 15:50:29,442 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 27299
+2022-04-12 15:51:10,648 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 27251
+2022-04-12 15:51:21,344 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 27251
+2022-04-12 15:52:01,606 django.server INFO     "GET /gallery/ HTTP/1.1" 200 29319
+2022-04-12 15:52:01,680 django.server INFO     "GET /static/_/js/app.1331299f8ef6.js HTTP/1.1" 200 8544
+2022-04-12 15:52:01,685 django.server INFO     "GET /static/_/css/app.d231d9d842f1.css HTTP/1.1" 200 30360
+2022-04-12 15:52:06,392 django.server INFO     "GET /admin/login/?next=/gallery/ HTTP/1.1" 200 53114
+2022-04-12 15:52:06,435 django.server INFO     "GET /static/admin/css/responsive_rtl.css?v=0.18.5 HTTP/1.1" 200 1741
+2022-04-12 15:52:06,436 django.server INFO     "GET /static/admin/css/responsive.css HTTP/1.1" 200 18545
+2022-04-12 15:52:06,437 django.server INFO     "GET /static/admin/css/responsive.css?v=0.18.5 HTTP/1.1" 200 18545
+2022-04-12 15:52:06,437 django.server INFO     "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2616
+2022-04-12 15:52:06,444 django.server INFO     "GET /static/admin/css/login.css HTTP/1.1" 200 954
+2022-04-12 15:52:06,446 django.server INFO     "GET /static/admin_interface/foldable-apps/foldable-apps.css?v=0.18.5 HTTP/1.1" 200 1943
+2022-04-12 15:52:06,448 django.server INFO     "GET /static/admin/css/base.css HTTP/1.1" 200 19513
+2022-04-12 15:52:06,453 django.server INFO     "GET /static/admin_interface/magnific-popup/magnific-popup.css?v=0.18.5 HTTP/1.1" 200 6951
+2022-04-12 15:52:06,457 django.server INFO     "GET /static/admin_interface/magnific-popup/jquery.magnific-popup.js?v=0.18.5 HTTP/1.1" 200 60830
+2022-04-12 15:52:06,461 django.server INFO     "GET /static/admin_interface/foldable-apps/foldable-apps.js?v=0.18.5 HTTP/1.1" 200 1749
+2022-04-12 15:52:06,465 django.server INFO     "GET /static/admin_interface/related-modal/related-modal.js?v=0.18.5 HTTP/1.1" 200 6368
+2022-04-12 15:52:06,482 django.server INFO     "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+2022-04-12 15:52:06,482 django.server INFO     "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3401
+2022-04-12 15:52:06,557 django.server INFO     "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+2022-04-12 15:52:06,560 django.server INFO     "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+2022-04-12 15:52:06,579 django.request WARNING  Not Found: /favicon.ico
+2022-04-12 15:52:06,581 django.server WARNING  "GET /favicon.ico HTTP/1.1" 404 4305
+2022-04-12 15:52:13,247 django.server INFO     "POST /admin/login/?next=/gallery/ HTTP/1.1" 302 0
+2022-04-12 15:52:13,467 django.server INFO     "GET /gallery/ HTTP/1.1" 200 30029
+2022-04-12 15:52:17,984 django.server INFO     "GET /admin/ HTTP/1.1" 200 62664
+2022-04-12 15:52:18,073 django.server INFO     "GET /static/admin/css/dashboard.css HTTP/1.1" 200 380
+2022-04-12 15:52:18,134 django.server INFO     "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+2022-04-12 15:52:18,135 django.server INFO     "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+2022-04-12 15:52:18,144 django.server INFO     "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+2022-04-12 15:52:26,039 django.server INFO     "GET /admin/main/author/ HTTP/1.1" 200 62239
+2022-04-12 15:52:26,075 django.server INFO     "GET /static/admin/css/changelists.css HTTP/1.1" 200 6932
+2022-04-12 15:52:26,082 django.server INFO     "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 288580
+2022-04-12 15:52:26,097 django.server INFO     "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+2022-04-12 15:52:26,104 django.server INFO     "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 5984
+2022-04-12 15:52:26,109 django.server INFO     "GET /static/admin/js/urlify.js HTTP/1.1" 200 7902
+2022-04-12 15:52:26,110 django.server INFO     "GET /static/admin/js/actions.js HTTP/1.1" 200 7872
+2022-04-12 15:52:26,111 django.server INFO     "GET /static/admin/js/core.js HTTP/1.1" 200 5698
+2022-04-12 15:52:26,113 django.server INFO     "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+2022-04-12 15:52:26,122 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2022-04-12 15:52:26,132 django.server INFO     "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+2022-04-12 15:52:26,156 django.server INFO     "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+2022-04-12 15:52:29,230 django.server INFO     "GET /admin/main/author/1/change/ HTTP/1.1" 200 64754
+2022-04-12 15:52:29,262 django.server INFO     "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 492
+2022-04-12 15:52:29,263 django.server INFO     "GET /static/admin/css/forms.css HTTP/1.1" 200 8835
+2022-04-12 15:52:29,280 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2022-04-12 15:52:29,296 django.server INFO     "GET /static/admin/css/widgets.css HTTP/1.1" 200 11097
+2022-04-12 15:52:29,309 django.server INFO     "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+2022-04-12 15:53:27,105 django.server INFO     "POST /admin/main/author/1/change/ HTTP/1.1" 302 0
+2022-04-12 15:53:27,217 django.server INFO     "GET /admin/main/author/ HTTP/1.1" 200 62447
+2022-04-12 15:53:27,292 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2022-04-12 15:53:27,357 django.server INFO     "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+2022-04-12 15:53:30,070 django.server INFO     "GET / HTTP/1.1" 200 25524
+2022-04-12 15:53:38,480 django.server INFO     "GET /artists/ HTTP/1.1" 200 32663
+2022-04-12 15:53:39,835 django.server INFO     "GET /artist/enny/ HTTP/1.1" 200 26612
+2022-04-12 15:53:56,129 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 27466
+2022-04-12 15:54:00,078 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 27466
+2022-04-12 15:54:00,122 django.server INFO     "GET /static/_/css/app.c4c2db594964.css HTTP/1.1" 200 21343
+2022-04-12 15:54:00,130 django.server INFO     "GET /static/_/css/bootstrap.989512dd68c6.css HTTP/1.1" 200 390561
+2022-04-12 15:54:00,372 django.server INFO     "GET /media/images/content/aad649202c824392b575d004f83b2986.jpeg HTTP/1.1" 200 155558
+2022-04-12 15:54:00,584 django.server INFO     "GET /static/favicon.png HTTP/1.1" 200 1121
+2022-04-12 15:54:02,029 django.server INFO     "GET /admin/ HTTP/1.1" 200 62959
+2022-04-12 15:54:02,148 django.request WARNING  Not Found: /favicon.ico
+2022-04-12 15:54:02,150 django.server WARNING  "GET /favicon.ico HTTP/1.1" 404 4305
+2022-04-12 15:54:05,949 django.server INFO     "GET /admin/main/author/ HTTP/1.1" 200 62239
+2022-04-12 15:54:06,011 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2022-04-12 15:54:08,164 django.server INFO     "GET /admin/main/author/1/change/ HTTP/1.1" 200 64754
+2022-04-12 15:54:08,209 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2022-04-12 15:54:10,362 django.server INFO     "GET /media/images/content/17fa830db80c498c9291076b8c6ab6d6.jpeg HTTP/1.1" 200 25596
+2022-04-12 15:54:11,477 django.server INFO     "GET /admin/main/author/1/change/ HTTP/1.1" 200 64754
+2022-04-12 15:54:34,064 django.server INFO     "GET /admin/main/author/ HTTP/1.1" 200 62239
+2022-04-12 15:54:35,511 django.server INFO     "GET /admin/ HTTP/1.1" 200 62959
+2022-04-12 15:54:47,156 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 27466
+2022-04-12 15:54:47,274 django.server INFO     "GET /media/images/content/17fa830db80c498c9291076b8c6ab6d6.jpeg HTTP/1.1" 304 0
+2022-04-12 15:55:15,720 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 27553
+2022-04-12 15:55:15,886 django.server INFO     "GET /media/images/content/17fa830db80c498c9291076b8c6ab6d6.jpeg HTTP/1.1" 304 0
+2022-04-12 15:55:29,860 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 27863
+2022-04-12 15:55:29,975 django.server INFO     "GET /media/images/content/17fa830db80c498c9291076b8c6ab6d6.jpeg HTTP/1.1" 304 0
+2022-04-12 15:55:35,180 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 27846
+2022-04-12 15:55:52,741 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 27867
+2022-04-12 15:55:52,871 django.server INFO     "GET /media/images/content/17fa830db80c498c9291076b8c6ab6d6.jpeg HTTP/1.1" 304 0
+2022-04-12 15:56:15,012 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 27859
+2022-04-12 15:56:15,155 django.server INFO     "GET /media/images/content/17fa830db80c498c9291076b8c6ab6d6.jpeg HTTP/1.1" 304 0
+2022-04-12 15:56:49,782 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 27875
+2022-04-12 15:56:49,954 django.server INFO     "GET /media/images/content/17fa830db80c498c9291076b8c6ab6d6.jpeg HTTP/1.1" 304 0
+2022-04-12 15:57:05,200 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 27875
+2022-04-12 15:57:05,287 django.server INFO     "GET /static/_/css/app.c4c2db594964.css HTTP/1.1" 200 21343
+2022-04-12 15:57:05,300 django.server INFO     "GET /static/_/css/bootstrap.989512dd68c6.css HTTP/1.1" 200 390561
+2022-04-12 15:57:05,514 django.server INFO     "GET /media/images/content/17fa830db80c498c9291076b8c6ab6d6.jpeg HTTP/1.1" 200 25596
+2022-04-12 15:57:05,738 django.server INFO     "GET /static/favicon.png HTTP/1.1" 200 1121
+2022-04-12 15:57:48,749 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 27968
+2022-04-12 15:57:48,879 django.server INFO     "GET /media/images/content/17fa830db80c498c9291076b8c6ab6d6.jpeg HTTP/1.1" 304 0
+2022-04-12 15:57:58,302 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 27992
+2022-04-12 15:58:05,366 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 27992
+2022-04-12 15:58:12,707 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 27992
+2022-04-12 15:58:28,767 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 27992
+2022-04-12 15:58:28,940 django.server INFO     "GET /media/images/content/17fa830db80c498c9291076b8c6ab6d6.jpeg HTTP/1.1" 304 0
+2022-04-12 15:58:36,047 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 27992
+2022-04-12 15:58:39,458 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 27992
+2022-04-12 15:58:58,443 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 27993
+2022-04-12 15:58:58,550 django.server INFO     "GET /media/images/content/17fa830db80c498c9291076b8c6ab6d6.jpeg HTTP/1.1" 304 0
+2022-04-12 15:59:08,624 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 27993
+2022-04-12 15:59:18,964 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 27992
+2022-04-12 15:59:46,087 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 27992
+2022-04-12 15:59:46,228 django.server INFO     "GET /media/images/content/17fa830db80c498c9291076b8c6ab6d6.jpeg HTTP/1.1" 304 0
+2022-04-12 16:00:25,812 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 27992
+2022-04-12 16:00:25,937 django.server INFO     "GET /media/images/content/17fa830db80c498c9291076b8c6ab6d6.jpeg HTTP/1.1" 304 0
+2022-04-12 16:01:28,402 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 28009
+2022-04-12 16:01:28,542 django.server INFO     "GET /media/images/content/17fa830db80c498c9291076b8c6ab6d6.jpeg HTTP/1.1" 304 0
+2022-04-12 16:01:41,869 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 28009
+2022-04-12 16:02:32,591 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 28035
+2022-04-12 16:02:32,772 django.server INFO     "GET /media/images/content/17fa830db80c498c9291076b8c6ab6d6.jpeg HTTP/1.1" 304 0
+2022-04-12 16:02:53,105 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 28212
+2022-04-12 16:04:19,254 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 28304
+2022-04-12 16:04:19,467 django.server INFO     "GET /media/images/content/17fa830db80c498c9291076b8c6ab6d6.jpeg HTTP/1.1" 304 0
+2022-04-12 16:04:24,348 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 28304
+2022-04-12 16:04:46,593 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 28283
+2022-04-12 16:05:02,722 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 28303
+2022-04-12 16:05:17,510 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 28304
+2022-04-12 16:05:46,261 django.request WARNING  Not Found: /artist/
+2022-04-12 16:05:46,265 django.server WARNING  "GET /artist/ HTTP/1.1" 404 4293
+2022-04-12 16:05:46,414 django.request WARNING  Not Found: /favicon.ico
+2022-04-12 16:05:46,417 django.server WARNING  "GET /favicon.ico HTTP/1.1" 404 4305
+2022-04-12 16:05:54,137 django.server INFO     "GET /artists HTTP/1.1" 301 0
+2022-04-12 16:05:54,225 django.server INFO     "GET /artists/ HTTP/1.1" 200 32663
+2022-04-12 16:05:55,947 django.server INFO     "GET /artist/chernyak-david/ HTTP/1.1" 200 27488
+2022-04-12 16:05:56,088 django.server INFO     "GET /media/images/content/96c8f52a08464299a88de2e56070334a.jpeg HTTP/1.1" 200 95699
+2022-04-12 16:06:03,829 django.server INFO     "GET /artist/shatrov-ivan/ HTTP/1.1" 200 27474
+2022-04-12 16:06:03,952 django.server INFO     "GET /media/images/content/f9324a9cadd946af91e9117f04783554.jpeg HTTP/1.1" 200 80690
+2022-04-12 16:06:08,664 django.server INFO     "GET /artist/enny/ HTTP/1.1" 200 27450
+2022-04-12 16:06:08,859 django.server INFO     "GET /media/images/content/51b800ca569b4f35806d4336af8ba3f0.jpeg HTTP/1.1" 200 66414
+2022-04-12 16:06:12,389 django.server INFO     "GET /artist/marinchenko-anton/ HTTP/1.1" 200 27494
+2022-04-12 16:06:12,469 django.server INFO     "GET /media/images/content/5e7aae041726414c8436df97a23bc68b.jpeg HTTP/1.1" 200 111714
+2022-04-12 16:06:23,663 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 28304
+2022-04-12 16:06:23,717 django.server INFO     "GET /media/images/content/17fa830db80c498c9291076b8c6ab6d6.jpeg HTTP/1.1" 304 0
+2022-04-12 16:11:26,698 django.utils.autoreload INFO     /usr/src/epoqueart/main/models.py changed, reloading.
+2022-04-12 16:11:28,143 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-12 16:11:30,372 django.utils.autoreload INFO     /usr/src/epoqueart/main/models.py changed, reloading.
+2022-04-12 16:11:31,040 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-12 16:11:33,463 django.utils.autoreload INFO     /usr/src/epoqueart/main/models.py changed, reloading.
+2022-04-12 16:11:34,279 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-12 16:11:49,027 django.utils.autoreload INFO     /usr/src/epoqueart/main/models.py changed, reloading.
+2022-04-12 16:11:49,788 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-12 16:14:02,288 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 28304
+2022-04-12 16:14:02,482 django.server INFO     "GET /media/images/content/17fa830db80c498c9291076b8c6ab6d6.jpeg HTTP/1.1" 304 0
+2022-04-12 16:14:44,420 django.request ERROR    Internal Server Error: /artist/pankevich-george/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/src/epoqueart/main/views.py", line 89, in artist
+    return render(request, "main/pages/artist.html", context)
+  File "/usr/local/lib/python3.9/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/usr/local/lib/python3.9/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/usr/local/lib/python3.9/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/usr/local/lib/python3.9/site-packages/django/template/base.py", line 176, in render
+    return self._render(context)
+  File "/usr/local/lib/python3.9/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python3.9/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/usr/local/lib/python3.9/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/usr/local/lib/python3.9/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.9/site-packages/django/template/loader_tags.py", line 153, in render
+    return compiled_parent._render(context)
+  File "/usr/local/lib/python3.9/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python3.9/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/usr/local/lib/python3.9/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/usr/local/lib/python3.9/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.9/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/usr/local/lib/python3.9/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/usr/local/lib/python3.9/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/usr/local/lib/python3.9/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.9/site-packages/django/template/loader_tags.py", line 201, in render
+    return template.render(context)
+  File "/usr/local/lib/python3.9/site-packages/django/template/base.py", line 178, in render
+    return self._render(context)
+  File "/usr/local/lib/python3.9/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python3.9/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/usr/local/lib/python3.9/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/usr/local/lib/python3.9/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.9/site-packages/compressor/templatetags/compress.py", line 151, in render
+    return self.render_compressed(context, self.kind, self.mode, forced=forced, log=log, verbosity=verbosity)
+  File "/usr/local/lib/python3.9/site-packages/compressor/templatetags/compress.py", line 121, in render_compressed
+    rendered_output = compressor.output(mode, forced=forced, basename=file_basename)
+  File "/usr/local/lib/python3.9/site-packages/compressor/css.py", line 46, in output
+    ret.append(subnode.output(*args, **kwargs))
+  File "/usr/local/lib/python3.9/site-packages/compressor/css.py", line 48, in output
+    return super().output(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/compressor/base.py", line 323, in output
+    output = '\n'.join(self.filter_input(forced))
+  File "/usr/local/lib/python3.9/site-packages/compressor/base.py", line 263, in filter_input
+    for hunk in self.hunks(forced):
+  File "/usr/local/lib/python3.9/site-packages/compressor/base.py", line 240, in hunks
+    yield self.filter(value, self.cached_filters, **options)
+  File "/usr/local/lib/python3.9/site-packages/compressor/base.py", line 312, in filter
+    content = filter_func(**kwargs)
+  File "/usr/local/lib/python3.9/site-packages/compressor/filters/base.py", line 200, in input
+    raise FilterError(err)
+compressor.exceptions.FilterError: Input Error: Did not receive any STDIN
+
+2022-04-12 16:14:44,443 django.server ERROR    "GET /artist/pankevich-george/ HTTP/1.1" 500 219247
+2022-04-12 16:14:46,037 django.request ERROR    Internal Server Error: /artist/pankevich-george/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/src/epoqueart/main/views.py", line 89, in artist
+    return render(request, "main/pages/artist.html", context)
+  File "/usr/local/lib/python3.9/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/usr/local/lib/python3.9/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/usr/local/lib/python3.9/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/usr/local/lib/python3.9/site-packages/django/template/base.py", line 176, in render
+    return self._render(context)
+  File "/usr/local/lib/python3.9/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python3.9/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/usr/local/lib/python3.9/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/usr/local/lib/python3.9/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.9/site-packages/django/template/loader_tags.py", line 153, in render
+    return compiled_parent._render(context)
+  File "/usr/local/lib/python3.9/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python3.9/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/usr/local/lib/python3.9/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/usr/local/lib/python3.9/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.9/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/usr/local/lib/python3.9/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/usr/local/lib/python3.9/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/usr/local/lib/python3.9/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.9/site-packages/django/template/loader_tags.py", line 201, in render
+    return template.render(context)
+  File "/usr/local/lib/python3.9/site-packages/django/template/base.py", line 178, in render
+    return self._render(context)
+  File "/usr/local/lib/python3.9/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python3.9/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/usr/local/lib/python3.9/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/usr/local/lib/python3.9/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.9/site-packages/compressor/templatetags/compress.py", line 151, in render
+    return self.render_compressed(context, self.kind, self.mode, forced=forced, log=log, verbosity=verbosity)
+  File "/usr/local/lib/python3.9/site-packages/compressor/templatetags/compress.py", line 121, in render_compressed
+    rendered_output = compressor.output(mode, forced=forced, basename=file_basename)
+  File "/usr/local/lib/python3.9/site-packages/compressor/css.py", line 46, in output
+    ret.append(subnode.output(*args, **kwargs))
+  File "/usr/local/lib/python3.9/site-packages/compressor/css.py", line 48, in output
+    return super().output(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/compressor/base.py", line 323, in output
+    output = '\n'.join(self.filter_input(forced))
+  File "/usr/local/lib/python3.9/site-packages/compressor/base.py", line 263, in filter_input
+    for hunk in self.hunks(forced):
+  File "/usr/local/lib/python3.9/site-packages/compressor/base.py", line 240, in hunks
+    yield self.filter(value, self.cached_filters, **options)
+  File "/usr/local/lib/python3.9/site-packages/compressor/base.py", line 312, in filter
+    content = filter_func(**kwargs)
+  File "/usr/local/lib/python3.9/site-packages/compressor/filters/base.py", line 200, in input
+    raise FilterError(err)
+compressor.exceptions.FilterError: Input Error: Did not receive any STDIN
+
+2022-04-12 16:14:46,040 django.server ERROR    "GET /artist/pankevich-george/ HTTP/1.1" 500 219247
+2022-04-12 16:15:02,943 django.request ERROR    Internal Server Error: /artist/pankevich-george/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/src/epoqueart/main/views.py", line 89, in artist
+    return render(request, "main/pages/artist.html", context)
+  File "/usr/local/lib/python3.9/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/usr/local/lib/python3.9/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/usr/local/lib/python3.9/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/usr/local/lib/python3.9/site-packages/django/template/base.py", line 176, in render
+    return self._render(context)
+  File "/usr/local/lib/python3.9/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python3.9/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/usr/local/lib/python3.9/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/usr/local/lib/python3.9/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.9/site-packages/django/template/loader_tags.py", line 153, in render
+    return compiled_parent._render(context)
+  File "/usr/local/lib/python3.9/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python3.9/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/usr/local/lib/python3.9/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/usr/local/lib/python3.9/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.9/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/usr/local/lib/python3.9/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/usr/local/lib/python3.9/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/usr/local/lib/python3.9/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.9/site-packages/django/template/loader_tags.py", line 201, in render
+    return template.render(context)
+  File "/usr/local/lib/python3.9/site-packages/django/template/base.py", line 178, in render
+    return self._render(context)
+  File "/usr/local/lib/python3.9/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python3.9/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/usr/local/lib/python3.9/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/usr/local/lib/python3.9/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.9/site-packages/compressor/templatetags/compress.py", line 151, in render
+    return self.render_compressed(context, self.kind, self.mode, forced=forced, log=log, verbosity=verbosity)
+  File "/usr/local/lib/python3.9/site-packages/compressor/templatetags/compress.py", line 121, in render_compressed
+    rendered_output = compressor.output(mode, forced=forced, basename=file_basename)
+  File "/usr/local/lib/python3.9/site-packages/compressor/css.py", line 46, in output
+    ret.append(subnode.output(*args, **kwargs))
+  File "/usr/local/lib/python3.9/site-packages/compressor/css.py", line 48, in output
+    return super().output(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/compressor/base.py", line 323, in output
+    output = '\n'.join(self.filter_input(forced))
+  File "/usr/local/lib/python3.9/site-packages/compressor/base.py", line 263, in filter_input
+    for hunk in self.hunks(forced):
+  File "/usr/local/lib/python3.9/site-packages/compressor/base.py", line 240, in hunks
+    yield self.filter(value, self.cached_filters, **options)
+  File "/usr/local/lib/python3.9/site-packages/compressor/base.py", line 312, in filter
+    content = filter_func(**kwargs)
+  File "/usr/local/lib/python3.9/site-packages/compressor/filters/base.py", line 200, in input
+    raise FilterError(err)
+compressor.exceptions.FilterError: Input Error: Did not receive any STDIN
+
+2022-04-12 16:15:02,947 django.server ERROR    "GET /artist/pankevich-george/ HTTP/1.1" 500 219259
+2022-04-12 16:15:20,060 django.request ERROR    Internal Server Error: /artist/pankevich-george/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/src/epoqueart/main/views.py", line 89, in artist
+    return render(request, "main/pages/artist.html", context)
+  File "/usr/local/lib/python3.9/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/usr/local/lib/python3.9/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/usr/local/lib/python3.9/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/usr/local/lib/python3.9/site-packages/django/template/base.py", line 176, in render
+    return self._render(context)
+  File "/usr/local/lib/python3.9/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python3.9/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/usr/local/lib/python3.9/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/usr/local/lib/python3.9/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.9/site-packages/django/template/loader_tags.py", line 153, in render
+    return compiled_parent._render(context)
+  File "/usr/local/lib/python3.9/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python3.9/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/usr/local/lib/python3.9/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/usr/local/lib/python3.9/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.9/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/usr/local/lib/python3.9/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/usr/local/lib/python3.9/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/usr/local/lib/python3.9/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.9/site-packages/django/template/loader_tags.py", line 201, in render
+    return template.render(context)
+  File "/usr/local/lib/python3.9/site-packages/django/template/base.py", line 178, in render
+    return self._render(context)
+  File "/usr/local/lib/python3.9/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python3.9/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/usr/local/lib/python3.9/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/usr/local/lib/python3.9/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.9/site-packages/compressor/templatetags/compress.py", line 151, in render
+    return self.render_compressed(context, self.kind, self.mode, forced=forced, log=log, verbosity=verbosity)
+  File "/usr/local/lib/python3.9/site-packages/compressor/templatetags/compress.py", line 121, in render_compressed
+    rendered_output = compressor.output(mode, forced=forced, basename=file_basename)
+  File "/usr/local/lib/python3.9/site-packages/compressor/css.py", line 46, in output
+    ret.append(subnode.output(*args, **kwargs))
+  File "/usr/local/lib/python3.9/site-packages/compressor/css.py", line 48, in output
+    return super().output(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/compressor/base.py", line 323, in output
+    output = '\n'.join(self.filter_input(forced))
+  File "/usr/local/lib/python3.9/site-packages/compressor/base.py", line 263, in filter_input
+    for hunk in self.hunks(forced):
+  File "/usr/local/lib/python3.9/site-packages/compressor/base.py", line 240, in hunks
+    yield self.filter(value, self.cached_filters, **options)
+  File "/usr/local/lib/python3.9/site-packages/compressor/base.py", line 312, in filter
+    content = filter_func(**kwargs)
+  File "/usr/local/lib/python3.9/site-packages/compressor/filters/base.py", line 200, in input
+    raise FilterError(err)
+compressor.exceptions.FilterError: Input Error: Did not receive any STDIN
+
+2022-04-12 16:15:20,066 django.server ERROR    "GET /artist/pankevich-george/ HTTP/1.1" 500 219427
+2022-04-12 16:15:45,351 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 28387
+2022-04-12 16:15:56,449 django.server INFO     "GET /gallery/ HTTP/1.1" 200 30029
+2022-04-12 16:16:15,590 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 28608
+2022-04-12 16:16:15,718 django.server INFO     "GET /media/images/content/17fa830db80c498c9291076b8c6ab6d6.jpeg HTTP/1.1" 304 0
+2022-04-12 16:17:31,411 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 28540
+2022-04-12 16:21:12,295 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 28387
+2022-04-12 16:21:12,434 django.server INFO     "GET /media/images/content/17fa830db80c498c9291076b8c6ab6d6.jpeg HTTP/1.1" 304 0
+2022-04-12 16:21:19,244 django.server INFO     "GET /admin/ HTTP/1.1" 200 62959
+2022-04-12 16:21:26,348 django.server INFO     "GET /admin/main/artwork/add/ HTTP/1.1" 200 73922
+2022-04-12 16:21:26,395 django.server INFO     "GET /static/admin/js/calendar.js HTTP/1.1" 200 8466
+2022-04-12 16:21:26,431 django.server INFO     "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 19634
+2022-04-12 16:21:26,435 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2022-04-12 16:21:26,458 django.server INFO     "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+2022-04-12 16:21:26,561 django.server INFO     "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+2022-04-12 16:22:01,625 django.server INFO     "GET /admin/main/artwork_type/add/?_to_field=id&_popup=1&_modal=359030 HTTP/1.1" 200 53714
+2022-04-12 16:22:01,704 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2022-04-12 16:22:06,025 django.server INFO     "POST /admin/main/artwork_type/add/?_to_field=id&_popup=1&_modal=359030 HTTP/1.1" 200 388
+2022-04-12 16:22:06,076 django.server INFO     "GET /static/admin/js/popup_response.js HTTP/1.1" 200 1839
+2022-04-12 16:22:47,172 django.utils.autoreload INFO     /usr/src/epoqueart/main/models.py changed, reloading.
+2022-04-12 16:22:48,267 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-12 16:22:54,656 django.utils.autoreload INFO     /usr/src/epoqueart/main/models.py changed, reloading.
+2022-04-12 16:22:55,413 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-12 16:23:32,513 django.server INFO     "GET /admin/main/artwork/add/ HTTP/1.1" 200 73963
+2022-04-12 16:23:32,620 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2022-04-12 16:24:01,620 django.utils.autoreload INFO     /usr/src/epoqueart/main/models.py changed, reloading.
+2022-04-12 16:24:02,460 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-12 16:24:09,890 django.utils.autoreload INFO     /usr/src/epoqueart/main/models.py changed, reloading.
+2022-04-12 16:24:10,581 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-12 16:24:12,793 django.utils.autoreload INFO     /usr/src/epoqueart/main/models.py changed, reloading.
+2022-04-12 16:24:13,574 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-12 16:24:22,042 django.utils.autoreload INFO     /usr/src/epoqueart/main/models.py changed, reloading.
+2022-04-12 16:24:22,828 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-12 16:24:24,002 django.utils.autoreload INFO     /usr/src/epoqueart/main/models.py changed, reloading.
+2022-04-12 16:24:24,683 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-12 16:24:28,976 django.utils.autoreload INFO     /usr/src/epoqueart/main/models.py changed, reloading.
+2022-04-12 16:24:29,726 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-12 16:24:30,807 django.server INFO     "GET /admin/main/artwork/add/ HTTP/1.1" 200 73963
+2022-04-12 16:24:30,935 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2022-04-12 16:25:34,436 django.server INFO     "GET /admin/main/currency/add/?_to_field=id&_popup=1&_modal=89470 HTTP/1.1" 200 56210
+2022-04-12 16:25:34,526 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2022-04-12 16:25:36,566 django.server INFO     "GET /admin/main/country/add/?_to_field=id&_popup=1&_modal=478654 HTTP/1.1" 200 53554
+2022-04-12 16:25:36,640 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2022-04-12 16:25:45,270 django.server INFO     "POST /admin/main/country/add/?_to_field=id&_popup=1&_modal=478654 HTTP/1.1" 200 393
+2022-04-12 16:25:56,586 django.server INFO     "POST /admin/main/currency/add/?_to_field=id&_popup=1&_modal=89470 HTTP/1.1" 200 389
+2022-04-12 16:26:12,761 django.server INFO     "GET /admin/main/gallery/add/?_to_field=id&_popup=1&_modal=530814 HTTP/1.1" 200 56080
+2022-04-12 16:26:12,819 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2022-04-12 16:27:10,585 django.server INFO     "GET /admin/main/city/add/?_to_field=id&_popup=1&_modal=30965 HTTP/1.1" 200 55470
+2022-04-12 16:27:10,666 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2022-04-12 16:27:32,912 django.server INFO     "POST /admin/main/city/add/?_to_field=id&_popup=1&_modal=30965 HTTP/1.1" 200 385
+2022-04-12 16:27:42,962 django.server INFO     "POST /admin/main/gallery/add/?_to_field=id&_popup=1&_modal=530814 HTTP/1.1" 200 440
+2022-04-12 16:27:48,039 django.server INFO     "GET /admin/main/artwork_status/add/?_to_field=id&_popup=1&_modal=947889 HTTP/1.1" 200 54328
+2022-04-12 16:27:48,083 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2022-04-12 16:28:03,616 django.server INFO     "POST /admin/main/artwork_status/add/?_to_field=id&_popup=1&_modal=947889 HTTP/1.1" 200 389
+2022-04-12 16:28:10,716 django.server INFO     "POST /admin/main/artwork/add/ HTTP/1.1" 302 0
+2022-04-12 16:28:10,817 django.server INFO     "GET /admin/main/artwork/ HTTP/1.1" 200 61631
+2022-04-12 16:28:10,968 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2022-04-12 16:31:19,540 django.server INFO     "GET /admin/main/artwork/add/ HTTP/1.1" 200 74134
+2022-04-12 16:31:29,398 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 28439
+2022-04-12 16:31:29,668 django.server INFO     "GET /media/images/content/17fa830db80c498c9291076b8c6ab6d6.jpeg HTTP/1.1" 304 0
+2022-04-12 16:32:32,926 django.utils.autoreload INFO     /usr/src/epoqueart/main/models.py changed, reloading.
+2022-04-12 16:32:33,848 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-12 16:53:36,733 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 28387
+2022-04-12 16:53:36,943 django.server INFO     "GET /media/images/content/17fa830db80c498c9291076b8c6ab6d6.jpeg HTTP/1.1" 304 0
+2022-04-12 16:53:54,508 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 28438
+2022-04-12 16:55:51,773 django.utils.autoreload INFO     /usr/src/epoqueart/main/models.py changed, reloading.
+2022-04-12 16:55:52,756 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-12 16:58:22,124 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 28699
+2022-04-12 16:58:22,691 django.server INFO     "GET /media/images/content/13af9838117c4d8aa8914a70ad2df24f.jpg HTTP/1.1" 200 484518
+2022-04-12 16:59:26,811 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 28388
+2022-04-12 17:00:02,290 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 28388
+2022-04-12 17:00:02,436 django.server INFO     "GET /media/images/content/17fa830db80c498c9291076b8c6ab6d6.jpeg HTTP/1.1" 304 0
+2022-04-12 17:00:33,977 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 28388
+2022-04-12 17:00:54,720 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 28388
+2022-04-12 17:01:28,944 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 28727
+2022-04-12 17:01:29,108 django.server INFO     "GET /media/images/content/13af9838117c4d8aa8914a70ad2df24f.jpg HTTP/1.1" 304 0
+2022-04-12 17:03:00,704 django.server INFO     "POST / HTTP/1.1" 200 26030
+2022-04-12 17:03:00,954 django.server INFO     "POST / HTTP/1.1" 200 26029
+2022-04-12 17:07:14,404 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 29310
+2022-04-12 17:07:14,648 django.server INFO     "GET /media/images/content/13af9838117c4d8aa8914a70ad2df24f.jpg HTTP/1.1" 304 0
+2022-04-12 17:07:14,648 django.server INFO     "GET /media/images/content/17fa830db80c498c9291076b8c6ab6d6.jpeg HTTP/1.1" 304 0
+2022-04-12 17:08:24,102 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 29449
+2022-04-12 17:08:46,795 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 29527
+2022-04-12 17:09:09,166 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 29543
+2022-04-12 17:09:20,363 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 29519
+2022-04-12 17:09:54,173 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 29603
+2022-04-12 17:10:24,577 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 29601
+2022-04-12 17:10:34,468 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 29621
+2022-04-12 17:10:46,619 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 29603
+2022-04-12 17:11:23,655 django.request ERROR    Internal Server Error: /artist/pankevich-george/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/src/epoqueart/main/views.py", line 89, in artist
+    return render(request, "main/pages/artist.html", context)
+  File "/usr/local/lib/python3.9/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/usr/local/lib/python3.9/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/usr/local/lib/python3.9/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/usr/local/lib/python3.9/site-packages/django/template/base.py", line 176, in render
+    return self._render(context)
+  File "/usr/local/lib/python3.9/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python3.9/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/usr/local/lib/python3.9/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/usr/local/lib/python3.9/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.9/site-packages/django/template/loader_tags.py", line 153, in render
+    return compiled_parent._render(context)
+  File "/usr/local/lib/python3.9/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python3.9/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/usr/local/lib/python3.9/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/usr/local/lib/python3.9/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.9/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/usr/local/lib/python3.9/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/usr/local/lib/python3.9/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/usr/local/lib/python3.9/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.9/site-packages/django/template/loader_tags.py", line 201, in render
+    return template.render(context)
+  File "/usr/local/lib/python3.9/site-packages/django/template/base.py", line 178, in render
+    return self._render(context)
+  File "/usr/local/lib/python3.9/site-packages/django/template/base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python3.9/site-packages/django/template/base.py", line 977, in render
+    return SafeString(''.join([
+  File "/usr/local/lib/python3.9/site-packages/django/template/base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "/usr/local/lib/python3.9/site-packages/django/template/base.py", line 938, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.9/site-packages/compressor/templatetags/compress.py", line 151, in render
+    return self.render_compressed(context, self.kind, self.mode, forced=forced, log=log, verbosity=verbosity)
+  File "/usr/local/lib/python3.9/site-packages/compressor/templatetags/compress.py", line 121, in render_compressed
+    rendered_output = compressor.output(mode, forced=forced, basename=file_basename)
+  File "/usr/local/lib/python3.9/site-packages/compressor/css.py", line 46, in output
+    ret.append(subnode.output(*args, **kwargs))
+  File "/usr/local/lib/python3.9/site-packages/compressor/css.py", line 48, in output
+    return super().output(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/compressor/base.py", line 323, in output
+    output = '\n'.join(self.filter_input(forced))
+  File "/usr/local/lib/python3.9/site-packages/compressor/base.py", line 263, in filter_input
+    for hunk in self.hunks(forced):
+  File "/usr/local/lib/python3.9/site-packages/compressor/base.py", line 237, in hunks
+    precompiled, value = self.precompile(value, **options)
+  File "/usr/local/lib/python3.9/site-packages/compressor/base.py", line 304, in precompile
+    return True, filter.input(**kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django_libsass.py", line 152, in input
+    return compile(string=self.content,
+  File "/usr/local/lib/python3.9/site-packages/django_libsass.py", line 135, in compile
+    output = sass.compile(**kwargs)
+  File "/usr/local/lib/python3.9/site-packages/sass.py", line 738, in compile
+    raise CompileError(v)
+sass.CompileError: Error: Invalid CSS after "...     object-fit": expected "}", was ": contain;"
+        on line 21:21 of stdin
+>>                     object-fit: contain;
+
+   --------------------^
+
+2022-04-12 17:11:23,669 django.server ERROR    "GET /artist/pankevich-george/ HTTP/1.1" 500 238106
+2022-04-12 17:11:31,089 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 30007
+2022-04-12 17:11:31,309 django.server INFO     "GET /media/images/content/13af9838117c4d8aa8914a70ad2df24f.jpg HTTP/1.1" 304 0
+2022-04-12 17:11:56,343 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 30028
+2022-04-12 17:12:04,969 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 30028
+2022-04-12 17:12:10,264 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 30028
+2022-04-12 17:12:43,829 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 30078
+2022-04-12 17:13:18,489 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 30339
+2022-04-12 17:13:44,933 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 30595
+2022-04-12 17:14:02,881 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 30514
+2022-04-12 17:14:24,597 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 30522
+2022-04-12 17:14:38,975 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 30778
+2022-04-12 17:14:39,252 django.server INFO     "GET /media/images/content/17fa830db80c498c9291076b8c6ab6d6.jpeg HTTP/1.1" 304 0
+2022-04-12 17:15:02,213 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 30859
+2022-04-12 17:15:31,314 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 30883
+2022-04-12 17:16:23,948 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 30859
+2022-04-12 17:16:24,094 django.server INFO     "GET /media/images/content/13af9838117c4d8aa8914a70ad2df24f.jpg HTTP/1.1" 304 0
+2022-04-12 17:17:16,108 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 30880
+2022-04-12 17:17:28,537 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 30881
+2022-04-12 17:17:56,815 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 30906
+2022-04-12 17:18:14,593 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 30906
+2022-04-12 17:18:31,845 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 30882
+2022-04-12 17:18:40,810 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 30905
+2022-04-12 17:20:41,643 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 30902
+2022-04-12 17:21:02,405 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 30902
+2022-04-12 17:21:56,197 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 30403
+2022-04-12 17:21:57,178 django.server INFO     "GET /media/images/content/13af9838117c4d8aa8914a70ad2df24f.jpg HTTP/1.1" 304 0
+2022-04-12 17:28:21,514 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 30711
+2022-04-12 17:28:21,766 django.server INFO     "GET /media/images/content/17fa830db80c498c9291076b8c6ab6d6.jpeg HTTP/1.1" 304 0
+2022-04-12 17:28:22,449 django.server INFO     "GET /media/images/content/13af9838117c4d8aa8914a70ad2df24f.jpg HTTP/1.1" 304 0
+2022-04-12 17:29:21,035 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 30903
+2022-04-12 17:30:15,961 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 31318
+2022-04-12 17:30:53,856 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 31581
+2022-04-12 17:32:24,773 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 31597
+2022-04-12 17:32:33,589 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 31613
+2022-04-12 17:33:59,239 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 31950
+2022-04-12 17:34:14,073 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 31966
+2022-04-12 17:34:36,283 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 31965
+2022-04-12 17:34:37,353 django.server INFO     "GET /media/images/content/13af9838117c4d8aa8914a70ad2df24f.jpg HTTP/1.1" 304 0
+2022-04-12 17:35:08,769 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 32199
+2022-04-12 17:35:18,468 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 32199
+2022-04-12 17:35:52,215 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 32222
+2022-04-12 17:36:04,251 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 32231
+2022-04-12 17:36:10,761 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 32199
+2022-04-12 17:41:42,222 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 32335
+2022-04-12 17:41:42,624 django.server INFO     "GET /media/images/content/17fa830db80c498c9291076b8c6ab6d6.jpeg HTTP/1.1" 304 0
+2022-04-12 17:41:43,441 django.server INFO     "GET /media/images/content/13af9838117c4d8aa8914a70ad2df24f.jpg HTTP/1.1" 304 0
+2022-04-12 17:42:13,068 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 32460
+2022-04-12 17:43:06,183 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 32686
+2022-04-12 17:43:32,905 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 32853
+2022-04-12 17:43:52,657 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 32884
+2022-04-12 17:44:02,023 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 32884
+2022-04-12 17:44:21,383 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 32907
+2022-04-12 17:44:35,655 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 32929
+2022-04-12 17:44:46,306 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 32957
+2022-04-12 17:45:00,796 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 32979
+2022-04-12 17:45:15,818 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 32981
+2022-04-12 17:45:26,426 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 32979
+2022-04-12 17:45:52,982 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 32956
+2022-04-12 17:46:17,366 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 32979
+2022-04-12 17:46:31,349 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 32934
+2022-04-12 17:46:55,080 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 33038
+2022-04-12 17:47:37,367 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 33177
+2022-04-12 17:50:49,843 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 33290
+2022-04-12 17:50:50,674 django.server INFO     "GET /media/images/content/13af9838117c4d8aa8914a70ad2df24f.jpg HTTP/1.1" 304 0
+2022-04-12 17:51:01,869 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 33314
+2022-04-12 17:51:21,557 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 33431
+2022-04-12 17:51:45,495 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 33333
+2022-04-12 17:51:58,826 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 33335
+2022-04-12 17:52:40,100 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 33475
+2022-04-12 17:52:40,357 django.server INFO     "GET /media/images/content/17fa830db80c498c9291076b8c6ab6d6.jpeg HTTP/1.1" 304 0
+2022-04-12 17:53:00,192 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 33506
+2022-04-12 17:53:10,047 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 33506
+2022-04-12 17:53:15,714 django.server INFO     "GET /media/images/content/13af9838117c4d8aa8914a70ad2df24f.jpg HTTP/1.1" 200 484518
+2022-04-12 17:53:39,946 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 34541
+2022-04-12 17:53:49,883 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 39716
+2022-04-12 17:56:44,457 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 33631
+2022-04-12 17:59:55,990 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 34369
+2022-04-12 17:59:56,858 django.server INFO     "GET /media/images/content/13af9838117c4d8aa8914a70ad2df24f.jpg HTTP/1.1" 304 0
+2022-04-12 18:00:12,781 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 34403
+2022-04-12 18:00:35,404 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 34429
+2022-04-12 18:01:01,156 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 34433
+2022-04-12 18:01:18,909 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 34398
+2022-04-12 18:06:29,432 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 34616
+2022-04-12 18:06:29,580 django.server INFO     "GET /media/images/content/17fa830db80c498c9291076b8c6ab6d6.jpeg HTTP/1.1" 304 0
+2022-04-12 18:07:10,306 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 34618
+2022-04-12 18:08:01,494 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 34642
+2022-04-12 18:09:29,710 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 34642
+2022-04-12 18:09:30,737 django.server INFO     "GET /media/images/content/13af9838117c4d8aa8914a70ad2df24f.jpg HTTP/1.1" 304 0
+2022-04-12 18:09:34,589 django.server INFO     "GET /gallery/?aid=1 HTTP/1.1" 200 32110
+2022-04-12 18:10:55,233 django.server INFO     "GET /gallery/?aid=1 HTTP/1.1" 200 32110
+2022-04-12 18:11:02,230 django.server INFO     "GET /gallery/?aid=1 HTTP/1.1" 200 32110
+2022-04-12 18:11:31,216 django.server INFO     "GET /gallery/?aid=1 HTTP/1.1" 200 32081
+2022-04-12 18:11:44,852 django.server INFO     "GET /gallery/?aid=1 HTTP/1.1" 200 32092
+2022-04-12 18:13:01,454 django.server INFO     "GET /gallery/?aid=1 HTTP/1.1" 200 32038
+2022-04-12 18:13:32,481 django.server INFO     "GET /gallery/?aid=1 HTTP/1.1" 200 32078
+2022-04-12 18:13:43,341 django.server INFO     "GET /gallery/?aid=1 HTTP/1.1" 200 32095
+2022-04-12 18:14:41,277 django.server INFO     "GET /admin/main/artwork/add/ HTTP/1.1" 200 74134
+2022-04-12 18:14:45,274 django.server INFO     "GET /admin/ HTTP/1.1" 200 63602
+2022-04-12 18:15:37,139 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-12 18:15:37,881 django.server INFO     "GET /artists HTTP/1.1" 301 0
+2022-04-12 18:15:40,799 django.server INFO     "GET /artists HTTP/1.1" 301 0
+2022-04-12 18:15:43,905 django.server INFO     "GET /artists/ HTTP/1.1" 200 32448
+2022-04-12 18:15:43,988 django.server INFO     "GET /artists/ HTTP/1.1" 200 32448
+2022-04-12 18:15:44,061 django.server INFO     "GET /static/_/css/app.c4c2db594964.css HTTP/1.1" 304 0
+2022-04-12 18:15:44,062 django.server INFO     "GET /static/_/css/bootstrap.989512dd68c6.css HTTP/1.1" 304 0
+2022-04-12 18:15:44,280 django.server INFO     "GET /media/images/content/4ec4e4f4a0e641ad83481e4d06f205f1.jpeg HTTP/1.1" 304 0
+2022-04-12 18:15:44,281 django.server INFO     "GET /media/images/content/4fa796cceaa74ef1a91e6037608ac1d4.jpeg HTTP/1.1" 304 0
+2022-04-12 18:15:44,289 django.server INFO     "GET /media/images/content/2bc3e798081747e6a602d7bfc949a7b6.jpeg HTTP/1.1" 304 0
+2022-04-12 18:15:44,318 django.server INFO     "GET /media/images/content/aad649202c824392b575d004f83b2986.jpeg HTTP/1.1" 304 0
+2022-04-12 18:15:44,319 django.server INFO     "GET /media/images/content/8b639be7586d4dd0afa6f75af4ec4575.jpeg HTTP/1.1" 304 0
+2022-04-12 18:15:49,816 django.server INFO     "GET /artist/chernyak-david/ HTTP/1.1" 200 31973
+2022-04-12 18:15:49,956 django.server INFO     "GET /media/images/content/96c8f52a08464299a88de2e56070334a.jpeg HTTP/1.1" 200 95699
+2022-04-12 18:15:58,551 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 34427
+2022-04-12 18:15:58,709 django.server INFO     "GET /media/images/content/17fa830db80c498c9291076b8c6ab6d6.jpeg HTTP/1.1" 200 25596
+2022-04-12 18:15:59,648 django.server INFO     "GET /media/images/content/13af9838117c4d8aa8914a70ad2df24f.jpg HTTP/1.1" 200 484518
+2022-04-12 18:16:16,847 django.server INFO     "GET /artist/enny/ HTTP/1.1" 200 31935
+2022-04-12 18:16:16,958 django.server INFO     "GET /media/images/content/51b800ca569b4f35806d4336af8ba3f0.jpeg HTTP/1.1" 200 66414
+2022-04-12 18:16:26,231 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 34427
+2022-04-12 18:17:36,641 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 34329
+2022-04-12 18:18:30,953 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 34329
+2022-04-12 18:25:27,253 django.server INFO     "GET /artist/enny/ HTTP/1.1" 200 31935
+2022-04-12 18:25:44,635 django.server INFO     "GET /artist/pankevich-george/ HTTP/1.1" 200 34329
+2022-04-12 18:26:03,543 django.server INFO     "GET /gallery/?aid=1 HTTP/1.1" 200 31385
+2022-04-12 18:26:03,670 django.server INFO     "GET /static/_/css/app.d231d9d842f1.css HTTP/1.1" 304 0
+2022-04-12 18:26:03,700 django.server INFO     "GET /static/_/js/app.1331299f8ef6.js HTTP/1.1" 304 0
+2022-04-12 18:26:14,851 django.server INFO     "GET /media/images/content/13af9838117c4d8aa8914a70ad2df24f.jpg HTTP/1.1" 200 484518
+2022-04-12 18:27:07,440 django.server INFO     "POST / HTTP/1.1" 200 25792
+2022-04-13 08:40:12,550 django.server INFO     "GET / HTTP/1.1" 200 26007
+2022-04-13 08:40:12,682 django.server INFO     "GET /static/_/css/bootstrap.989512dd68c6.css HTTP/1.1" 304 0
+2022-04-13 08:40:12,682 django.server INFO     "GET /static/_/css/app.c4c2db594964.css HTTP/1.1" 304 0
+2022-04-13 08:40:13,379 django.server INFO     "GET /static/img/assets/home/home-slider-03.jpg HTTP/1.1" 200 363593
+2022-04-13 08:40:13,433 django.server INFO     "GET /static/img/assets/home/home-slider-05.jpg HTTP/1.1" 200 430900
+2022-04-13 08:40:13,461 django.server INFO     "GET /static/favicon.png HTTP/1.1" 304 0
+2022-04-13 08:40:13,510 django.server INFO     "GET /static/img/assets/home/home-slider-04.jpg HTTP/1.1" 200 399848
+2022-04-13 08:40:13,509 django.server INFO     "GET /static/img/assets/home/home-slider-01.jpg HTTP/1.1" 200 515516
+2022-04-13 08:40:13,480 django.server INFO     "GET /static/img/assets/home/home-slider-02.jpg HTTP/1.1" 200 450212
+2022-04-13 08:40:13,540 django.server INFO     "GET /static/img/assets/home/home-about-02.jpg HTTP/1.1" 200 474499
+2022-04-13 08:40:14,316 django.server INFO     "GET /media/images/content/13af9838117c4d8aa8914a70ad2df24f.jpg HTTP/1.1" 200 484518
+2022-04-13 08:40:17,782 django.server INFO     "GET /admin/ HTTP/1.1" 200 63602
+2022-04-13 08:40:17,827 django.server INFO     "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2616
+2022-04-13 08:40:17,830 django.server INFO     "GET /static/admin/css/dashboard.css HTTP/1.1" 200 380
+2022-04-13 08:40:17,831 django.server INFO     "GET /static/admin/css/responsive_rtl.css?v=0.18.5 HTTP/1.1" 200 1741
+2022-04-13 08:40:17,832 django.server INFO     "GET /static/admin/css/responsive.css HTTP/1.1" 200 18545
+2022-04-13 08:40:17,832 django.server INFO     "GET /static/admin/css/responsive.css?v=0.18.5 HTTP/1.1" 200 18545
+2022-04-13 08:40:17,837 django.server INFO     "GET /static/admin/css/base.css HTTP/1.1" 200 19513
+2022-04-13 08:40:17,840 django.server INFO     "GET /static/admin_interface/foldable-apps/foldable-apps.css?v=0.18.5 HTTP/1.1" 200 1943
+2022-04-13 08:40:17,845 django.server INFO     "GET /static/admin_interface/magnific-popup/magnific-popup.css?v=0.18.5 HTTP/1.1" 200 6951
+2022-04-13 08:40:17,847 django.server INFO     "GET /static/admin_interface/foldable-apps/foldable-apps.js?v=0.18.5 HTTP/1.1" 200 1749
+2022-04-13 08:40:17,858 django.server INFO     "GET /static/admin_interface/related-modal/related-modal.js?v=0.18.5 HTTP/1.1" 200 6368
+2022-04-13 08:40:17,859 django.server INFO     "GET /static/admin_interface/magnific-popup/jquery.magnific-popup.js?v=0.18.5 HTTP/1.1" 200 60830
+2022-04-13 08:40:17,862 django.server INFO     "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+2022-04-13 08:40:17,866 django.server INFO     "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3401
+2022-04-13 08:40:17,881 django.server INFO     "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+2022-04-13 08:40:17,881 django.server INFO     "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+2022-04-13 08:40:17,900 django.server INFO     "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+2022-04-13 08:40:17,903 django.server INFO     "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+2022-04-13 08:40:17,903 django.server INFO     "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+2022-04-13 08:40:18,022 django.request WARNING  Not Found: /favicon.ico
+2022-04-13 08:40:18,024 django.server WARNING  "GET /favicon.ico HTTP/1.1" 404 4302
+2022-04-13 08:40:20,875 django.server INFO     "GET /admin/main/event/ HTTP/1.1" 200 60238
+2022-04-13 08:40:20,931 django.server INFO     "GET /static/admin/js/actions.js HTTP/1.1" 200 7872
+2022-04-13 08:40:20,932 django.server INFO     "GET /static/admin/js/urlify.js HTTP/1.1" 200 7902
+2022-04-13 08:40:20,937 django.server INFO     "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 5984
+2022-04-13 08:40:20,943 django.server INFO     "GET /static/admin/js/core.js HTTP/1.1" 200 5698
+2022-04-13 08:40:20,962 django.server INFO     "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+2022-04-13 08:40:20,975 django.server INFO     "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+2022-04-13 08:40:20,977 django.server INFO     "GET /static/admin/css/changelists.css HTTP/1.1" 200 6932
+2022-04-13 08:40:20,985 django.server INFO     "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+2022-04-13 08:40:20,993 django.server INFO     "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 288580
+2022-04-13 08:40:21,002 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2022-04-13 08:40:21,088 django.server INFO     "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+2022-04-13 08:40:23,826 django.server INFO     "GET /admin/main/event/add/ HTTP/1.1" 200 65607
+2022-04-13 08:40:23,864 django.server INFO     "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 19634
+2022-04-13 08:40:23,865 django.server INFO     "GET /static/admin/js/calendar.js HTTP/1.1" 200 8466
+2022-04-13 08:40:23,867 django.server INFO     "GET /static/admin/css/forms.css HTTP/1.1" 200 8835
+2022-04-13 08:40:23,883 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2022-04-13 08:40:23,888 django.server INFO     "GET /static/admin/css/widgets.css HTTP/1.1" 200 11097
+2022-04-13 08:40:23,890 django.server INFO     "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 492
+2022-04-13 08:40:23,892 django.server INFO     "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+2022-04-13 08:40:23,901 django.server INFO     "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+2022-04-13 08:40:24,018 django.server INFO     "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+2022-04-13 08:40:41,569 django.server INFO     "POST /admin/main/event/add/ HTTP/1.1" 302 0
+2022-04-13 08:40:41,691 django.server INFO     "GET /admin/main/event/add/ HTTP/1.1" 200 65832
+2022-04-13 08:40:41,748 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2022-04-13 08:40:41,811 django.server INFO     "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+2022-04-13 08:40:45,172 django.server INFO     "GET /static/admin/img/calendar-icons.svg HTTP/1.1" 200 1094
+2022-04-13 08:40:57,647 django.server INFO     "POST /admin/main/event/add/ HTTP/1.1" 200 65783
+2022-04-13 08:40:57,732 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2022-04-13 08:41:17,427 django.server INFO     "POST /admin/main/event/add/ HTTP/1.1" 302 0
+2022-04-13 08:41:17,573 django.server INFO     "GET /admin/main/event/add/ HTTP/1.1" 200 65833
+2022-04-13 08:41:17,648 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2022-04-13 08:41:35,006 django.server INFO     "POST /admin/main/event/add/ HTTP/1.1" 200 65783
+2022-04-13 08:41:35,083 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2022-04-13 08:41:44,320 django.server INFO     "POST /admin/main/event/add/ HTTP/1.1" 302 0
+2022-04-13 08:41:44,417 django.server INFO     "GET /admin/main/event/ HTTP/1.1" 200 61975
+2022-04-13 08:41:44,478 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2022-04-13 08:41:47,591 django.server INFO     "GET / HTTP/1.1" 200 27936
+2022-04-13 08:41:47,645 django.server INFO     "GET /static/js/clamp.min.js HTTP/1.1" 200 8081
+2022-04-13 08:41:47,831 django.server INFO     "GET /media/images/content/ea4438b7a91648f4adb6867801e4c5d7.jpeg HTTP/1.1" 200 86037
+2022-04-13 08:41:47,833 django.server INFO     "GET /media/images/content/32b280b4c1aa4f91a7804a0c34cce31d.jpeg HTTP/1.1" 200 86037
+2022-04-13 08:42:17,425 django.server INFO     "GET / HTTP/1.1" 200 28074
+2022-04-13 08:42:17,897 django.server INFO     "GET /media/images/content/ea4438b7a91648f4adb6867801e4c5d7.jpeg HTTP/1.1" 304 0
+2022-04-13 08:42:17,897 django.server INFO     "GET /media/images/content/32b280b4c1aa4f91a7804a0c34cce31d.jpeg HTTP/1.1" 304 0
+2022-04-13 08:42:17,927 django.server INFO     "GET /static/favicon.svg HTTP/1.1" 304 0
+2022-04-13 08:42:42,938 django.server INFO     "GET / HTTP/1.1" 200 28094
+2022-04-13 08:42:43,787 django.server INFO     "GET /media/images/content/32b280b4c1aa4f91a7804a0c34cce31d.jpeg HTTP/1.1" 304 0
+2022-04-13 08:42:43,788 django.server INFO     "GET /media/images/content/ea4438b7a91648f4adb6867801e4c5d7.jpeg HTTP/1.1" 304 0
+2022-04-13 08:42:51,115 django.server INFO     "GET / HTTP/1.1" 200 28090
+2022-04-13 08:42:52,033 django.server INFO     "GET /media/images/content/32b280b4c1aa4f91a7804a0c34cce31d.jpeg HTTP/1.1" 304 0
+2022-04-13 08:43:31,639 django.server INFO     "GET / HTTP/1.1" 200 28100
+2022-04-13 08:43:32,368 django.server INFO     "GET /media/images/content/ea4438b7a91648f4adb6867801e4c5d7.jpeg HTTP/1.1" 304 0
+2022-04-13 08:43:32,371 django.server INFO     "GET /media/images/content/32b280b4c1aa4f91a7804a0c34cce31d.jpeg HTTP/1.1" 304 0
+2022-04-13 08:44:09,915 django.server INFO     "GET / HTTP/1.1" 200 28115
+2022-04-13 08:44:10,164 django.server INFO     "GET /media/images/content/ea4438b7a91648f4adb6867801e4c5d7.jpeg HTTP/1.1" 304 0
+2022-04-13 08:44:10,846 django.server INFO     "GET /media/images/content/32b280b4c1aa4f91a7804a0c34cce31d.jpeg HTTP/1.1" 304 0
+2022-04-13 08:44:35,989 django.server INFO     "GET /admin/ HTTP/1.1" 200 63562
+2022-04-13 08:44:42,080 django.server INFO     "GET /admin/main/event/ HTTP/1.1" 200 61782
+2022-04-13 08:44:42,168 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2022-04-13 08:44:45,612 django.server INFO     "GET /admin/main/event/2/change/ HTTP/1.1" 200 66194
+2022-04-13 08:44:45,717 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2022-04-13 08:44:51,067 django.server INFO     "POST /admin/main/event/2/change/ HTTP/1.1" 302 0
+2022-04-13 08:44:51,303 django.server INFO     "GET /admin/main/event/ HTTP/1.1" 200 61977
+2022-04-13 08:44:51,354 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2022-04-13 08:44:53,563 django.server INFO     "GET / HTTP/1.1" 200 28916
+2022-04-13 08:44:53,736 django.server INFO     "GET /media/images/content/ea4438b7a91648f4adb6867801e4c5d7.jpeg HTTP/1.1" 304 0
+2022-04-13 08:44:53,919 django.server INFO     "GET /media/images/content/89b6f9a553b8414cacaff57d9ed2f56c.jpg HTTP/1.1" 200 484518
+2022-04-13 08:44:54,417 django.server INFO     "GET /media/images/content/32b280b4c1aa4f91a7804a0c34cce31d.jpeg HTTP/1.1" 304 0
+2022-04-13 08:45:03,012 django.server INFO     "GET /admin/main/event/ HTTP/1.1" 200 61782
+2022-04-13 08:46:41,231 django.server INFO     "GET / HTTP/1.1" 200 28970
+2022-04-13 08:46:41,693 django.server INFO     "GET /media/images/content/ea4438b7a91648f4adb6867801e4c5d7.jpeg HTTP/1.1" 304 0
+2022-04-13 08:46:41,708 django.server INFO     "GET /media/images/content/89b6f9a553b8414cacaff57d9ed2f56c.jpg HTTP/1.1" 304 0
+2022-04-13 08:46:42,438 django.server INFO     "GET /media/images/content/32b280b4c1aa4f91a7804a0c34cce31d.jpeg HTTP/1.1" 304 0
+2022-04-13 08:50:02,290 django.server INFO     "GET / HTTP/1.1" 200 31300
+2022-04-13 08:50:02,607 django.server INFO     "GET /media/images/content/ea4438b7a91648f4adb6867801e4c5d7.jpeg HTTP/1.1" 304 0
+2022-04-13 08:50:03,967 django.server INFO     "GET /media/images/content/89b6f9a553b8414cacaff57d9ed2f56c.jpg HTTP/1.1" 304 0
+2022-04-13 08:50:04,815 django.server INFO     "GET /media/images/content/32b280b4c1aa4f91a7804a0c34cce31d.jpeg HTTP/1.1" 304 0
+2022-04-13 08:50:47,751 django.server INFO     "GET / HTTP/1.1" 200 31298
+2022-04-13 08:51:00,633 django.server INFO     "GET / HTTP/1.1" 200 31316
+2022-04-13 08:51:00,906 django.server INFO     "GET /media/images/content/ea4438b7a91648f4adb6867801e4c5d7.jpeg HTTP/1.1" 304 0
+2022-04-13 08:51:01,394 django.server INFO     "GET /media/images/content/89b6f9a553b8414cacaff57d9ed2f56c.jpg HTTP/1.1" 304 0
+2022-04-13 08:51:01,510 django.server INFO     "GET /media/images/content/32b280b4c1aa4f91a7804a0c34cce31d.jpeg HTTP/1.1" 304 0
+2022-04-13 08:52:40,859 django.server INFO     "GET / HTTP/1.1" 200 31339
+2022-04-13 08:52:41,132 django.server INFO     "GET /media/images/content/ea4438b7a91648f4adb6867801e4c5d7.jpeg HTTP/1.1" 304 0
+2022-04-13 08:52:41,880 django.server INFO     "GET /media/images/content/89b6f9a553b8414cacaff57d9ed2f56c.jpg HTTP/1.1" 304 0
+2022-04-13 08:52:43,517 django.server INFO     "GET /media/images/content/32b280b4c1aa4f91a7804a0c34cce31d.jpeg HTTP/1.1" 304 0
+2022-04-13 08:53:04,099 django.server INFO     "GET / HTTP/1.1" 200 31274
+2022-04-13 08:53:17,322 django.server INFO     "GET / HTTP/1.1" 200 28869
+2022-04-13 08:55:20,168 django.server INFO     "GET / HTTP/1.1" 200 28872
+2022-04-13 08:55:20,519 django.server INFO     "GET /media/images/content/ea4438b7a91648f4adb6867801e4c5d7.jpeg HTTP/1.1" 304 0
+2022-04-13 08:55:21,166 django.server INFO     "GET /media/images/content/89b6f9a553b8414cacaff57d9ed2f56c.jpg HTTP/1.1" 304 0
+2022-04-13 08:55:22,114 django.server INFO     "GET /media/images/content/32b280b4c1aa4f91a7804a0c34cce31d.jpeg HTTP/1.1" 304 0
+2022-04-13 08:56:04,275 django.server INFO     "GET / HTTP/1.1" 200 28891
+2022-04-13 09:00:38,739 django.server INFO     "GET / HTTP/1.1" 200 29021
+2022-04-13 09:00:38,942 django.server INFO     "GET /media/images/content/ea4438b7a91648f4adb6867801e4c5d7.jpeg HTTP/1.1" 304 0
+2022-04-13 09:01:11,210 django.server INFO     "GET / HTTP/1.1" 200 29002
+2022-04-13 09:01:11,869 django.server INFO     "GET /media/images/content/89b6f9a553b8414cacaff57d9ed2f56c.jpg HTTP/1.1" 304 0
+2022-04-13 09:01:13,734 django.server INFO     "GET /media/images/content/32b280b4c1aa4f91a7804a0c34cce31d.jpeg HTTP/1.1" 304 0
+2022-04-13 09:01:24,737 django.server INFO     "GET / HTTP/1.1" 200 29033
+2022-04-13 09:01:57,399 django.server INFO     "GET / HTTP/1.1" 200 29044
+2022-04-13 09:02:18,381 django.server INFO     "GET / HTTP/1.1" 200 29052
+2022-04-13 09:02:47,480 django.server INFO     "GET / HTTP/1.1" 200 29005
+2022-04-13 09:02:47,666 django.server INFO     "GET /media/images/content/ea4438b7a91648f4adb6867801e4c5d7.jpeg HTTP/1.1" 304 0
+2022-04-13 09:03:43,418 django.server INFO     "GET / HTTP/1.1" 200 29015
+2022-04-13 09:03:44,382 django.server INFO     "GET /media/images/content/89b6f9a553b8414cacaff57d9ed2f56c.jpg HTTP/1.1" 304 0
+2022-04-13 09:03:47,730 django.server INFO     "GET /media/images/content/32b280b4c1aa4f91a7804a0c34cce31d.jpeg HTTP/1.1" 304 0
+2022-04-13 09:03:56,890 django.server INFO     "GET / HTTP/1.1" 200 28997
+2022-04-13 09:04:47,637 django.server INFO     "GET / HTTP/1.1" 200 29002
+2022-04-13 09:05:03,895 django.server INFO     "GET / HTTP/1.1" 200 28976
+2022-04-13 09:05:04,106 django.server INFO     "GET /media/images/content/ea4438b7a91648f4adb6867801e4c5d7.jpeg HTTP/1.1" 304 0
+2022-04-13 09:05:16,752 django.server INFO     "GET / HTTP/1.1" 200 28997
+2022-04-13 09:06:41,813 django.request WARNING  Not Found: /unknown-page
+2022-04-13 09:08:22,190 django.request WARNING  Not Found: /unknown-page
+2022-04-13 09:09:24,835 django.request WARNING  Not Found: /unknown-page
+2022-04-13 09:10:25,346 django.utils.autoreload INFO     /usr/src/epoqueart/main/models.py changed, reloading.
+2022-04-13 09:10:26,597 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-13 09:11:37,020 django.request WARNING  Not Found: /unknown-page
+2022-04-13 09:12:49,210 django.request WARNING  Not Found: /unknown-page

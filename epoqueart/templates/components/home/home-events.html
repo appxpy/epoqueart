@@ -1,0 +1,136 @@
+{% load compress %}
+{% load static %}
+
+{% compress css inline %}
+<style lang="scss" type="text/x-scss">
+    .home-events {
+        display: flex;
+        flex-direction: column;
+
+        .home-events-container {
+
+            display: flex;
+            width: 100%;
+            gap: 20px;
+
+            @media screen and (max-width: 1024px) {
+                flex-direction: column;
+            }
+            .home-events__item {
+                display: flex;
+                width: 100%;
+                max-height: 250px;
+
+                .home-events__item-image img {
+                    width: 250px;
+                    height: 250px;
+                    object-fit: cover;
+                    margin-right: 20px;
+
+                    @media screen and (max-width: 575px) {
+                        display: none;
+                    }
+                }
+
+                .home-events__item-content {
+                    overflow:hidden;
+                    position: relative;
+                    display: flex;
+                    flex: 1 1 auto;
+                    flex-direction: column;
+                    height: 250px;
+                    background-color: #e3e3e3;
+                    padding: 20px;
+
+                    .home-events__item-content {
+                        padding-left: none;
+                    }
+                    .home-events__item-date {
+                        font-size: 2em;
+                        white-space: nowrap;
+                        text-transform: uppercase;
+                    }
+
+                    .home-events__item-title {
+                        font-size: 1.3em;
+                        margin-bottom: 15px;
+                        border-bottom: 1px solid #000;
+                    }
+                    
+                    .home-events__item-description {
+                        display: -webkit-box;
+                        -webkit-line-clamp: 3;
+                        -webkit-box-orient: vertical;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+
+                }
+            }
+        }
+    }
+</style>
+{% endcompress %}
+{% if events %}
+<section class="home-section-title">Upcoming events</section>
+<section class="home-events">
+    <div class="home-events-container">
+        {% for event in events %}
+        <div class="home-events__item">
+            <div class="home-events__item-image">
+                <img loading="lazy" src="{{ event.image.url }}" alt="Event Image">
+            </div>
+            <div class="home-events__item-content">
+                <div class="home-events__item-date">
+                    {{ event.date|date:'F j' }}
+                </div>
+                <div class="home-events__item-title">
+                    «{{ event.event_name|safe }}»
+                </div>
+                <div class="home-events__item-description">
+                    {{ event.event_description|safe }}
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+<section class="section-link">
+    <button href="" id="events-load-more">More events...</button>
+</section>
+<script src="{% static 'js/clamp.min.js' %}"></script>
+{% compress js inline  %}
+<script>
+    (function($) {
+    $(document).ready(function()
+    {
+        o = $('.home-events-container').children();
+        if (o.length < 2) {
+            $('#events-load-more').hide();
+        };
+        q = 0
+        for (var i = 0; i < o.length; i++) {
+            if (q > 1) {
+                $(o[i]).hide()
+            }
+            q += 1
+        }
+    })
+
+    $('#events-load-more').on('click', function(e){
+        o = $('.home-events-container').children()
+        q = 0
+        for (var i = 0; i < o.length; i++) {
+            if ($(o[i]).css('display') == 'none') {
+                q += 1;
+                $(o[i]).show()
+            };
+            if (q > 2) {break};
+        }
+    });
+})(jQuery);
+</script>
+{% endcompress %}
+
+{% endif %}

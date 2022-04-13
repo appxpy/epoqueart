@@ -1,0 +1,13 @@
+{% load compress %}
+{% load static %}
+
+{% compress css inline %}
+<style lang="scss" type="text/x-scss">
+.artists-header {
+    display: inline;
+}
+</style>
+{% endcompress %}
+
+<section class="artists-section-title">Artist | {{ artist.name|safe }}</section>
+<section class="artists-section-subtitle"><span>Discover your next work of art. To search by artist, collection and size visit <a href="{% url 'gallery' %}" class="section-integrated_link">NetGallery</a> page.</span></section>

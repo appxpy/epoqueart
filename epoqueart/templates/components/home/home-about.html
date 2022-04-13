@@ -1,0 +1,45 @@
+{% load compress %}
+{% load static %}
+
+{% compress css inline %}
+<style lang="scss" type="text/x-scss">
+    .home-about {
+        .home-about-container {
+            .home-about__image {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img {
+                    width: 100%;
+                    max-width: 500px;
+                    margin: 0 auto;
+                    height: 300px;
+                    object-fit: cover;
+                }
+            }
+
+            .home-about__text {
+                margin: 20px 20px 0px 20px;
+                text-align: center;
+            }
+        }
+    }
+</style>
+{% endcompress %}
+<section class="home-section-title">Welcome to our gallery!</section>
+
+<section class="home-about">
+    <div class="home-about-container">
+        <div class="home-about__image">
+            <img loading="lazy" src="{% static 'img/assets/home/home-about-02.jpg' %}" alt="Gallery image">
+        </div>
+        <div class="home-about__text">
+            <q>{% lorem 100 w random %}</q>
+        </div>
+    </div>
+</section>
+
+<section class="section-link">
+    <a href="">Read more...</a>
+</section>

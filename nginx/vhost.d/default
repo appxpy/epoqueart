@@ -7,3 +7,13 @@ location /media/ {
   alias /home/epoqueart/web/media/;
   add_header Access-Control-Allow-Origin *;
 }
+
+location robots.txt {
+  alias /home/epoqueart/web/static.robots.txt;
+  add_header Access-Control-Allow-Origin *;
+}
+
+location sitemap.xml {
+  alias /home/epoqueart/web/static/sitemap.xml;
+  add_header Access-Control-Allow-Origin *;
+}

@@ -1,0 +1,14 @@
+{% extends 'main/base.html' %}
+{% load i18n %}
+{% load static %}
+
+{% block title%}
+<title>EpoqueArt - Artists</title>
+{% endblock %}
+
+{% block content %}
+
+{% include 'components/artists/artists-header.html' %}
+{% include 'components/artists/artists-cards.html' %}
+{% include 'components/contact.html' %}
+{% endblock %}

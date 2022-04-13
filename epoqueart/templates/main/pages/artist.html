@@ -1,0 +1,16 @@
+{% extends 'main/base.html' %}
+{% load i18n %}
+{% load static %}
+
+{% block title%}
+<title>EpoqueArt - {{ artist.name|safe }}</title>
+{% endblock %}
+
+{% block content %}
+
+{% include 'components/artist/artist-header.html' %}
+{% include 'components/artist/artist-info.html' %}
+{% include 'components/artist/artist-portfolio.html' %}
+{% include 'components/contact.html' %}
+
+{% endblock %}

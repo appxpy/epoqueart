@@ -11,4 +11,6 @@ then
     echo "PostgreSQL started"
 fi
 
+python compress-images.py
+
 exec "$@"

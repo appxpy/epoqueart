@@ -1,3 +1,17 @@
+(function($) {
+  $.fn.toggleAttrVal = function(attr, val1, val2) {
+    var test = $(this).attr(attr);
+    if ( test === val1) {
+      $(this).attr(attr, val2);
+      return this;
+    }
+    if ( test === val2) {
+      $(this).attr(attr, val1);
+      return this;
+    }
+    $(this).attr(attr, val1);
+    return this;
+  };
 function getAverageRGB(imgEl) {
   var blockSize = 5,
     defaultRGB = {
@@ -68,11 +82,17 @@ function lighter(color) {
   return rgb;
 }
 
-document.addEventListener('DOMContentLoaded', function () {
+function rs() {
   let vh = window.innerHeight * 0.01;
   document.documentElement.style.setProperty('--vh', vh+'px');
+}
+$(window).resize(function() {
+  rs()
+});
+  rs()
   var outerSlider = new Splide('#outer-slider', {
     autoplay: true,
+    interval: 30000,
     pauseOnHover: false,
     pauseOnFocus: false,
     width: '90vw',
@@ -89,6 +109,13 @@ document.addEventListener('DOMContentLoaded', function () {
   outerSlider.mount();
   outerSlider.on('autoplay:play autoplay:pause', function () {
     $('.toggle-button').toggleClass("bi-play-fill bi-pause-fill")
+  });
+
+  $('a.slider__toggle-desc').on('click', function () {
+    $('.slider__desc', $(this).parent()).toggleAttrVal("expanded", "true", "false");
+    var text = $(this).text();
+    $(this).text(
+        text == "Contract" ? "Expand" : "Contract");
   });
 
   if ($('#outer-slider').hasClass('no-results')) {
@@ -127,7 +154,11 @@ document.addEventListener('DOMContentLoaded', function () {
       $('.splide__arrows').css('opacity', 0);
     });
   });
+  var is_mobile = false;
 
+  if( $('div.is-mobile').css('display')=='none') {
+    is_mobile = true;
+  }
   var timeout = null
   $(document).on('mousemove click', function () {
     if (timeout !== null) {
@@ -141,7 +172,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     timeout = setTimeout(function () {
-      if (!$('.sidebar').hasClass('active') & !($('#outer-slider').hasClass('no-results'))) {
+      if (!is_mobile & !$('.sidebar').hasClass('active') & !($('#outer-slider').hasClass('no-results'))) {
         $('.splide__arrows').css("opacity", 0);
         $('html').css({
           cursor: 'none'
@@ -174,7 +205,6 @@ document.addEventListener('DOMContentLoaded', function () {
       $(this).blur();
     });
   });
-});
 
 $(window).on('load', function () {
   sa();
@@ -312,3 +342,4 @@ $("#search-input").on("keyup", function (e) {
     $(".search-results-container").html("<i class='bi bi-search mx-auto'></i><span class='search-results__empty mx-auto'>Type something</span><span class='search-result__empty_sub mx-auto'>E.g. \"Love in yellow\"</span>");
   }
 });
+})(jQuery);

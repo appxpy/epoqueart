@@ -1,0 +1,200 @@
+{% load compress %}
+{% load static %}
+
+{% compress css inline %}
+<style lang="scss" type="text/x-scss">
+    #artist-cards-callback {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        min-height: 300px;
+    }
+    .artists-cards {
+        .artists-cards-container {
+            display: flex;
+            flex: 1 1 auto;
+            flex-wrap: wrap;
+
+            gap: 20px;
+
+            justify-content: center;
+            
+            width: 100%;
+            min-height: 400px;
+
+            .artists-cards__item {
+                position: relative;
+                width: 30vw;
+                height: 30vw;
+
+                min-width: 300px;
+                min-height: 300px;
+
+                max-height: 400px;
+                max-width: 400px;
+
+                &:hover {
+                    cursor: pointer;
+
+                    .artists-cards__item-name-container {
+                        background: rgba(0, 0, 0, 0.4);
+                    }
+                }
+
+                img {
+                    width: 30vw;
+                    height: 30vw;
+
+                    min-width: 300px;
+                    min-height: 300px;
+
+                    max-height: 400px;
+                    max-width: 400px;
+
+                    object-fit: cover;
+                    
+                    filter: grayscale(1);
+
+                    transition: all 0.3s ease;
+                }
+
+                .artists-cards__item-name-container {
+                    color: #fff;
+                    position: absolute;
+                    font-size: 1.2em;
+                    bottom: 0px;
+                    left: 50%;
+                    width: 100%;
+                    
+                    text-align: center;
+                    text-transform: uppercase;
+                    transform: translateX(-50%);
+                    transition: all 0.3s ease;
+                }
+            }
+        }
+    }
+
+    .artists-cards-filter {
+        position: relative;
+        width: 70vw;
+        margin: 0 auto;
+        max-width: 600px;
+
+        display: flex;
+        flex: 1 1 auto;
+
+        justify-content: center;
+        align-items: center;
+
+        input {
+            width: 100%;
+            height: 40px;
+            text-indent: 3em;
+            border-radius: 5px;
+            background-color: #fff;
+            border: 1px solid transparent;
+            outline: none;
+            font-weight: 100;
+            letter-spacing: 2px;
+            box-shadow: 0 5px 35px 0px rgba(0, 0, 0, .1);
+        }
+
+        i {
+            position: absolute;
+            left: 0;
+            padding: 0.5em 1em;
+            border-radius: 5px;
+            background-color: white;
+        }
+    }
+</style>
+{% endcompress %}
+{% if artists %}
+<section class="artists-cards-filter">
+    <i class="bi bi-search"></i>
+    <input type="text" id="artists-search" placeholder="Search for artists...">
+</section>
+<section class="artists-cards">
+    <div class="artists-cards-container">
+            {% for author in artists  %}
+                <a class="artists-cards__item{% if forloop.counter > 9 %}artist-card-hidden{% endif %}" href="{% url 'artist' slug=author.slug %}">
+                    <img loading="lazy" src="{{ author.preview_image.url }}" alt="Artist preview">
+                    <div class="artists-cards__item-name-container"><span class="artists-cards__item-name gslight">{{ author.name|safe }}</span></div>
+                </a>
+            {% endfor %}
+        </div>
+        <section class="section-link">
+            <button href="" id="artists-load-more">Load more...</button>
+        </section>
+        {% compress js inline %}
+        <script type="text/javascript">
+            (function($) {
+                function icontains( elem, text ) {
+                    return (
+                        elem.textContent ||
+                        elem.innerText ||
+                        $( elem ).text() ||
+                        ""
+                    ).toLowerCase().indexOf( (text || "").toLowerCase() ) > -1;
+                }
+
+                $.expr[':'].icontains = $.expr.createPseudo ?
+                    $.expr.createPseudo(function( text ) {
+                        return function( elem ) {
+                            return icontains( elem, text );
+                        };
+                    }) :
+                    function( elem, i, match ) {
+                        return icontains( elem, match[3] );
+                };
+                function hide(k) {
+                    k.fadeOut(300,easing='linear', complete = function(){k.hide()});
+                };
+                function show(k) {
+                    k.fadeIn(300,easing='linear',complete = function(){k.show()});
+                };
+
+                $(document).ready(function(){o = $('.artists-cards-container').children();if (o.length < 9) {$('#artists-load-more').hide();};})
+                $('#artists-load-more').on('click', function(e){
+                    o = $('.artists-cards-container').children()
+                    q = 0
+                    for (var i = 0; i < o.length; i++) {
+                        if ($(o[i]).hasClass('artist-card-hidden')) {
+                            q += 1;
+                            hide($(o[i]))//////HIDE
+                        };
+                        if (q > 10) {break};
+                        if ($('.artists-cards__item').not('.artist-card-hidden').length == 0) {
+                            $('#artists-load-more').hide();
+                        }
+                    }
+                });
+
+                $('#artists-search').keyup(function(){
+                    var query = $(this).val();
+                    valid = $('.artists-cards__item:icontains("'+ query+'")').toArray();
+                    show($('.artists-cards__item:icontains("'+ query+'")'));
+                    o = $('.artists-cards__item').toArray();
+                    o = o.filter(function(val) {
+                        return valid.indexOf(val) == -1;
+                      });
+                    for (var i = 0; i < o.length; i++) {
+                        e = o[i]
+                        hide($(e))
+                    }
+
+                });            
+              })(jQuery);
+        </script>
+        {% endcompress %}
+    </div>
+</section>
+{% else %}
+<section class="artists-section-title" id="artist-cards-callback">
+    <i class="bi bi-exclamation-triangle-fill"></i>
+    We didn't find any artist in our database.<br>Please try again later
+</section>
+{% endif %}

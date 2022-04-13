@@ -1,0 +1,141 @@
+{% load compress %}
+{% load static %}
+
+{% compress css inline %}
+<style lang="scss" type="text/x-scss">
+    .home-slider {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        // flex: 1 1 auto;
+        align-items: center;
+        margin-top: 15px;
+        margin-bottom: 15px;
+
+        .splide__arrow {
+            background-color: transparent !important;
+            font-size: 2rem;
+            color: white !important;
+            opacity: 1 !important;
+
+            &.splide__arrow--next {
+                position: absolute;
+                width: 0px;
+                right: 20px;
+            }
+
+            &.splide__arrow--prev {
+                position: absolute;
+                width: 0px;
+                left: 20px;
+            }
+
+        }
+
+        .splide__slide img {
+            width: 100%;
+            max-height: 500px;
+            -o-object-fit: cover;
+            object-fit: cover;
+            background-position: center center;
+        }
+
+        .splide__list {
+            height: inherit;
+        }
+
+        .splide__pagination__page {
+            background: transparent !important;
+            border: 1px solid #fff;
+            border-radius: 50%;
+            display: inline-block;
+            height: 8px;
+            margin: 3px;
+            opacity: 1 !important;
+            padding: 0;
+            transition: transform .2s linear;
+            width: 8px;
+
+            &.is-active {
+                background: #fff !important;
+                transform: scale(1) !important;
+            }
+        }
+
+        .home-slider__title {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            text-align: right;
+            bottom: 0;
+            right: 0;
+
+            margin: 20px;
+
+            color: #fff;
+
+            span {
+                text-transform: uppercase;
+            }
+
+            .row-1 {
+                font-size: 3vw;
+            }
+
+            .row-2 {
+                font-size: 2vw;
+            }
+        }
+    }
+</style>
+{% endcompress %}
+
+<section class="home-slider">
+    <div id="main-slider" class="splide">
+        <div class="splide__arrows error-hide">
+            <button tabindex="-1" class="splide__arrow splide__arrow--prev bi bi-chevron-compact-left">
+            </button>
+            <button tabindex="-1" class="splide__arrow splide__arrow--next bi bi-chevron-compact-right">
+            </button>
+        </div>
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide">
+                    <img loading="lazy" src="{% static 'img/assets/home/home-slider-01.jpg' %}">
+                </li>
+                <li class="splide__slide">
+                    <img loading="lazy" src="{% static 'img/assets/home/home-slider-02.jpg' %}">
+                </li>
+                <li class="splide__slide">
+                    <img loading="lazy" src="{% static 'img/assets/home/home-slider-03.jpg' %}">
+                </li>
+                <li class="splide__slide">
+                    <img loading="lazy" src="{% static 'img/assets/home/home-slider-04.jpg' %}">
+                </li>
+                <li class="splide__slide">
+                    <img loading="lazy" src="{% static 'img/assets/home/home-slider-05.jpg' %}">
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="home-slider__title error-hide">
+        <span class="gsregular row-1">Turn</span>
+        <span class="gsregular row-2">Your ideas</span>
+        <span class="gsregular row-1">Into art</span>
+    </div>
+</section>
+
+<script type="text/javascript" charset="utf-8">
+    var homeSlider = new Splide('#main-slider', {
+        autoplay: true,
+        pauseOnHover: false,
+        pauseOnFocus: false,
+        width: '100%',
+        type: 'slide',
+        rewind: true,
+        pagination: true,
+        arrows: 'slider',
+        keyboard: false,
+    });
+    homeSlider.mount();
+</script>

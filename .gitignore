@@ -1,7 +1,14 @@
 .DS_Store
+*/.DS_Store
 ea_env/
 .vscode/
 _/
+node_modules/
+package-lock.json
+save.json
+
+
+epoqueart/media/*
 
 #ENV FILES
 .env.dev

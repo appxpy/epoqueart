@@ -1,0 +1,42 @@
+{% load compress %}
+{% load static %}
+
+{% compress css inline %}
+<style lang="scss" type="text/x-scss">
+    .home-collab {
+        .home-collab-container {
+            .home-collab__image {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img {
+                    width: 100%;
+                    max-width: 500px;
+                    margin: 0 auto;
+                    height: 300px;
+                    object-fit: cover;
+                }
+            }
+
+            .home-collab__text {
+                margin: 20px 20px 0px 20px;
+                text-align: center;
+            }
+        }
+    }
+</style>
+{% endcompress %}
+<section class="home-section-title">We'll turn your ideas into a masterpiece with our artists</section>
+
+<section class="home-collab">
+    <div class="home-collab-container">
+        <div class="home-collab__image">
+            <img loading="lazy" src="{% static 'img/assets/home/home-collab-03.jpg' %}" alt="Collab image">
+        </div>
+    </div>
+</section>
+
+<section class="section-link">
+    <a href="">Start collab</a>
+</section>

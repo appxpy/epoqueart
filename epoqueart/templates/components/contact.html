@@ -1,0 +1,283 @@
+{% load compress %}
+{% load static %}
+
+{% compress css inline %}
+<style lang="scss" type="text/x-scss">
+    section.contact-form {
+        position: relative;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0px;
+        
+
+        div.contact-status-container {
+            position: absolute;
+            width: calc(60vw + 10px);
+            max-width: 610px;
+            min-width: 310px;
+            height: calc(100% + 10px);
+            backdrop-filter: blur(5px);
+            border-radius: 10px;
+            z-index: 1000;
+
+            &.hide {
+                display: none;
+            }
+
+            button.contact-status__close-button {
+                position: absolute;
+                top: 0;
+                right: 0;
+                margin: 10px;
+            }
+
+            div.contact-status__message {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+        form.contact-form {
+        position: relative;
+        width: 60vw;
+        max-width: 600px;
+        min-width: 300px;
+        padding: 1em;
+        border: .1px solid #000;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+
+        .iti {
+            width: 100%;
+        }
+        div.form-row {
+            display: flex;
+            gap: 1em;
+            
+            @media (max-width: 768px) {
+                flex-direction: column;
+            }
+        }
+        div.form-subscribe {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            .form-check-label {
+                font-size: .8em;
+                font-weight: bold;
+            }
+
+            input {
+                font-weight: 200;
+
+                &:focus {
+                    outline: none;
+                    box-shadow: none;
+                }
+
+                &:checked {
+                    background-color: #000;
+                    border-color: #000;
+                }
+            }
+        }
+        div.form-group {
+            
+            width: 100%;
+            textarea {
+                max-height: 100px;
+            }
+
+            input, textarea {
+                font-size: .8em;
+                font-weight: 200;
+                border: none;
+                border-radius: 0;
+
+                background-color: #ebebeb;
+
+                
+                &:focus {
+                    outline: none;
+                    box-shadow: none;
+                }
+            }
+
+        }
+    }
+}
+
+section.contact-features {
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px 0px;
+    padding: 1em;
+
+    @media (max-width: 768px) {
+        display: none;
+    }
+
+    h5 {
+        width: 60vw;
+        max-width: 600px;
+        min-width: 300px;
+        text-align: left;
+    }
+
+    div.contact-features-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1em;
+        width: 60vw;
+        max-width: 600px;
+        min-width: 300px;
+        font-weight: 200;
+        
+        background-color: #ebebeb;
+
+        .contact-features__item {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            i {
+                font-size: 2em;
+            }
+
+            span {
+                padding: .5em;
+                font-size: .8em;
+            }
+        }
+
+    }
+}
+</style>
+{% endcompress %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.16/js/intlTelInput-jquery.min.js" integrity="sha512-+xuLsxQN3JBrnBSAr/vOlUqZfQ0OwpqZfdbuiQVpzjd5Y85F8F2AyzP4YNVDrpR29EolzELxc62br5gWK51phQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.16/css/intlTelInput.css" integrity="sha512-gxWow8Mo6q6pLa1XH/CcH8JyiSDEtiwJV78E+D+QP0EVasFs8wKXq16G8CLD4CJ2SnonHr4Lm/yY2fSI2+cbmw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<section class="contact-form">
+<div class="contact-status-container hide">
+    <button class="btn contact-status__close-button" id="contact-status-close">
+        <i class="bi bi-x"></i>
+    </button>
+
+    <div class="contact-status__message">
+        <h4 class="gslight text-center" id="contact-status-text"></h5>
+        <span class="text-muted gslight text-center">Please contact the administrator support@epoqueart.com</span>
+    </div>
+</div>
+<form class="contact-form gsregular" action="/" method="POST" id="contact-form">
+    <h3 class="text-center">Contact for more Information and Availability and Price</h3>
+    {% csrf_token %}
+    <div class="form-row">
+        <div class="form-group">
+            <input type="text" class="form-control" name="fname" id="fname" placeholder="First Name *" required>
+          </div>
+          <div class="form-group">
+              <input type="text" class="form-control" name="lname" id="lname" placeholder="Last Name *" required>
+          </div>
+    </div>
+    <div class="form-group">
+        <input type="email" class="form-control" id="email" placeholder="Email Address *" required>
+    </div>
+    <div class="form-group">
+        <input type="tel" name="phone" class="form-control" placeholder="Phone Number">
+    </div>
+    <div class="form-group">
+      <textarea class="form-control" id="message" name="desc" rows="3" placeholder="Hi, I'm interested in purchasing artwork by Angelo Accardi. Could you please provide more information?" required></textarea>
+    </div>
+    <div class="form-check form-switch form-subscribe">
+        <input class="form-check-input" type="checkbox" id="subscribe" name="subscribe" checked>
+        <label class="form-check-label" for="subscribe">I'd like to recieve future updates and newsletters</label>
+      </div>
+    <input type="submit" class="btn btn-primary" value="Submit">
+  </form>
+</section>
+
+<section class="contact-features">
+    <h5>We provide</h5>
+    <div class="contact-features-container">
+        <div class="contact-features__item">
+            <i class="bi bi-patch-check"></i>
+            <span>Certificate of Authority</span>
+        </div>
+        <div class="contact-features__item">
+            <i class="bi bi-box-seam"></i>
+            <span>Worldwide Shipping</span>
+        </div>
+        <div class="contact-features__item">
+            <i class="bi bi-chat-dots"></i>
+            <span>On-site consultation</span>
+        </div>
+        <div class="contact-features__item">
+            <i class="bi bi-tag"></i>
+            <span>Appraisal from<br>The gallery</span>
+        </div>
+    </div>
+</section>
+{% compress js inline %}
+<script type="text/javascript">
+    (function($) {
+        $("input[type='tel']").intlTelInput({
+            utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.16/js/utils.js",
+            geoIpLookup: function(success, failure) {
+                $.get("https://ipinfo.io", function() {}, "jsonp").always(function(resp) {
+                  var countryCode = (resp && resp.country) ? resp.country : "us";
+                  success(countryCode);
+                });
+            },
+            separateDialCode: true
+        });
+        $("#contact-status-close").on("click", function() {
+            $('.contact-status-container').addClass('hide');
+        });
+        $("#contact-form").submit(function(e) {
+
+            e.preventDefault();
+        
+            var form = $(this);
+            var actionUrl = form.attr('action');
+            
+            $.ajax({
+                type: "POST",
+                url: actionUrl,
+                data: form.serialize(),
+                success: function(data)
+                {
+                    $("#contact-form input[type=text], input[type=tel], input[type=email], textarea").val("");
+                    $('#contact-status-text').text('We\'ll response you as soon as possible!')
+                    $('.contact-status-container').removeClass('hide')
+                    $('#contact-status-close').removeClass('btn-danger');
+                    $('#contact-status-close').addClass('btn-success');
+                    $('.contact-status__message h4').removeClass('text-danger');
+                    $('.contact-status__message h4').addClass('text-success');
+                },
+                error: function(jqXHR, textStatus, errorThrown) {
+                    $('#contact-status-text').text('An error occurred while sending the message.')
+                    $('.contact-status-container').removeClass('hide')
+                    $('#contact-status-close').addClass('btn-danger');
+                    $('#contact-status-close').removeClass('btn-success');
+                    $('.contact-status__message h4').addClass('text-danger');
+                    $('.contact-status__message h4').removeClass('text-success');
+                }
+            });
+        });
+      })(jQuery);
+</script>
+{% endcompress %}

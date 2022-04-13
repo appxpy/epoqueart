@@ -1,0 +1,60 @@
+{% load compress %}
+{% load static %}
+
+{% compress css inline %}
+<style lang="scss" type="text/x-scss">
+section.artist-info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    div.artist-image { 
+        position: relative;
+        img {
+            height: 400px;
+            width: 100%;
+            overflow: hidden;
+            object-fit: cover;
+        }
+        div.artist-sign {
+            display: flex;
+            flex-direction: column;
+
+            padding: 12px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+
+            span.artist-name {
+                color: #fff;
+                font-weight: 300;
+                font-size: calc(0.75em + 5vmin);
+            }
+
+            span.artist-qualification {
+                color: #fff;
+                font-weight: 200;
+                font-size: calc(0.75em + 3vmin);
+            }
+        }
+    }
+    div.artist-description {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+}
+</style>
+{% endcompress %}
+<section class="artist-info">
+    <div class="artist-image">
+        <img src="{{ artist.image.url }}" alt="Artist Image">
+        <div class="artist-sign">
+            <span class="artist-name">{{ artist.name|safe }}</span>
+            <span class="artist-qualification">{{ artist.qualification|safe }}</span>
+        </div>
+    </div>
+    <div class="artist-description">
+        {{ artist.description|safe }}
+    </div>
+</section>

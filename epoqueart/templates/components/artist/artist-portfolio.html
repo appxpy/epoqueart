@@ -1,0 +1,135 @@
+{% load compress %}
+{% load static %}
+
+{% compress css inline %}
+<style lang="scss" type="text/x-scss">
+    section.artist-portfolio {
+        margin: 20px 0;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+
+        div.artist-portfolio__item {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            div.artist-portfolio__image {
+                position: relative;
+                flex: 50%;
+                background: #ebebeb;
+
+                min-width: 300px;
+                height: 300px;
+                
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                img {
+                    width: 70%;
+                    min-width: 300px;
+                    padding: 10px;
+                    height: 300px;
+                    object-fit: contain;
+                }
+
+                a.artist-portfolio__view-netgallery {
+                    position: absolute;
+                    top: 5px;
+                    right: 5px;
+                    font-size: 1.2em;
+                    font-weight: 500;
+                    text-align: center;
+                    transition: all .3s ease-in-out;
+                    border-radius: .2em;
+
+                    i {
+                        padding: 5px;
+                    }
+                }
+            }
+
+            div.artist-portfolio__image-details {
+                position: relative;
+                display: flex;
+
+                div.artist-portfolio__image-details-text {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+
+                    span.artist-portfolio__image-title {
+                        font-size: 1.2em;
+                        font-weight: 500;
+                    }
+
+                    a.artist-portfolio__download-image {
+                        flex: 0;
+                        font-size: 1.2em;
+                        font-weight: 500;
+                        text-align: center;
+                        transition: all .3s ease-in-out;
+                        border-radius: .2em;
+
+                        &:hover {
+                            color: #fff;
+                            background-color: #000;
+                        }
+
+                        i {
+                            padding: 5px;
+                        }
+                    }
+
+                    span.artist-portfolio__image-subtitle {
+                        font-size: .9em;
+                        font-weight: 300;
+                    }
+                }
+            }
+        }
+    }
+</style>
+{% endcompress %}
+{% if artist.artwork_set.all|length > 0 %}
+<section class="artist-portfolio">
+    {% for artwork in artist.artwork_set.all %}
+            {% if artwork.status.artwork_is_available %}
+            <div class="artist-portfolio__item">
+                <div class="artist-portfolio__image">
+                    <img loading="lazy" src="{{ artwork.image.url }}" alt="Artwork Image">
+                    <a class="artist-portfolio__view-netgallery" href="{% url 'gallery' %}?aid={{ artwork.id }}"><i class="bi bi-heart"></i></a>
+                </div>
+                <div class="artist-portfolio__image-details">
+                    <div class="artist-portfolio__image-details-text">
+                        <div class="d-flex justify-content-between">
+                            <span class="artist-portfolio__image-title">{{ artwork.title }}</span>
+                            <a class="artist-portfolio__download-image" href="{{ artwork.image.url }}" download="{{ artwork.image.filename }}"><i class="bi bi-download"></i></a>
+                        </div>
+
+                        <span class="artist-portfolio__image-subtitle">{{ artwork.author.name }} | {{ artwork.materials }} {% if artwork.is_nft_linked %}| Mixed media artwork{% endif %}</span>
+                        <span class="artist-portfolio__image-subtitle">{{ artwork.get_size_cm|join:"x" }} cm | {{ artwork.get_size_inch|join:"x" }} in</span>
+                    </div>
+                </div>
+            </div> 
+            {% endif %}
+    {% endfor %}
+</section>
+{% compress js inline %}
+<script>
+    (function($) {
+        $('a.artist-portfolio__view-netgallery').hover(function () {
+            $(this).children('i').addClass('bi-heart-fill');
+            $(this).children('i').removeClass('bi-heart');
+        }, function () {
+            $(this).children('i').removeClass('bi-heart-fill');
+            $(this).children('i').addClass('bi-heart');
+        });
+    })(jQuery);
+</script>
+{% endcompress %}
+{% endif %}

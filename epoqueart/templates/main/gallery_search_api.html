@@ -1,4 +1,4 @@
-{% if not authors and not paintings %}
+{% if not authors and not artworks %}
 <i class='bi bi-x-lg mx-auto'></i><span class='search-results__empty mx-auto'>No results</span><span
     class='search-result__empty_sub mx-auto'>Try to edit your query</span>
 {% else %}
@@ -8,26 +8,25 @@
     {% for author in authors %}
     <a href="?aid={{ author.id }}" class="search-results__link">
         <div class="search-results__box">
-            <img class="search-results__image" src="{{ author.avatar.url }}" alt="Avatar">
-            <span class="search-results__title">{{ author.full_name|safe }}</span>
+            <img class="search-results__image" src="{{ author.preview_image.url }}" alt="Avatar">
+            <span class="search-results__title">{{ author.name|safe }}</span>
         </div>
     </a>
     {% endfor %}
 </div>
 {% endif %}
-{% if paintings %}
+{% if artworks %}
 <div class="search-results__category-container">
-    <span class="search-results__category">Paintings</span>
-    {% for painting in paintings %}
-    <a href="?pid={{ painting.id }}" class="search-results__link">
+    <span class="search-results__category">Artworks</span>
+    {% for artwork in artworks %}
+    <a href="?pid={{ artwork.id }}" class="search-results__link">
         <div class="search-results__box">
-            <img class="search-results__image" src="{{ painting.image.url }}" alt="Image">
+            <img class="search-results__image" src="{{ artwork.image.url }}" alt="Image">
             <div class="search-results__painting-info">
-                <span class="search-results__info-author">{{ painting.name|safe }}</span>
-                <span class="search-results__info-title">{{ painting.author.first_name|safe }}
-                    {{ painting.author.last_name|safe }}</span>
+                <span class="search-results__info-author">{{ artwork.title|safe }}</span>
+                <span class="search-results__info-title">{{ artwork.author.name|safe }}</span>
             </div>
-            <span class="search-results__painting-price">{{ painting.price }}$</span>
+            <span class="search-results__painting-price">{{ artwork.price }}$</span>
         </div>
     </a>
     {% endfor %}
