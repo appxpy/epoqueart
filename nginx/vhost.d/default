@@ -9,7 +9,7 @@ location /media/ {
 }
 
 location robots.txt {
-  alias /home/epoqueart/web/static.robots.txt;
+  alias /home/epoqueart/web/static/robots.txt;
   add_header Access-Control-Allow-Origin *;
 }
 
